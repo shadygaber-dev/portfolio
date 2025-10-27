@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Shady - Frontend Developer">
+    <title>Projects - Shady.dev</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Shady</span><span class="logo-dot">.</span><span class="logo-dev">dev</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content fade-in">
+                <span class="page-subtitle">MY PORTFOLIO</span>
+                <h1 class="page-title">Projects</h1>
+                <p class="page-description">A collection of my recent work and side projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter -->
+    <section class="section projects-filter">
+        <div class="container">
+            <div class="filter-buttons fade-in-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="responsive">Responsive</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section projects-full">
+        <div class="container">
+            <div class="projects-grid-full">
+                <article class="project-card-full fade-in-up" data-category="web">
+                    <div class="project-image-full">
+                        <div class="project-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-overlay">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                        <h3 class="project-title-full">E-Commerce Platform</h3>
+                        <p class="project-description-full">
+                            A comprehensive e-commerce solution featuring product management, shopping cart, 
+                            payment integration with Stripe, order tracking, and admin dashboard with analytics.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card-full fade-in-up" data-category="web">
+                    <div class="project-image-full">
+                        <div class="project-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-overlay">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Socket.io</span>
+                        </div>
+                        <h3 class="project-title-full">Task Management Application</h3>
+                        <p class="project-description-full">
+                            Real-time collaborative task management tool with team workspaces, drag-and-drop 
+                            functionality, notifications, and detailed analytics dashboard.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card-full fade-in-up" data-category="ui responsive">
+                    <div class="project-image-full">
+                        <div class="project-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-overlay">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Framer Motion</span>
+                        </div>
+                        <h3 class="project-title-full">Portfolio Website</h3>
+                        <p class="project-description-full">
+                            Modern portfolio website with blog integration, smooth animations, dark mode, 
+                            optimized performance, and SEO-friendly structure.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card-full fade-in-up" data-category="web responsive">
+                    <div class="project-image-full">
+                        <div class="project-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-overlay">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Material-UI</span>
+                        </div>
+                        <h3 class="project-title-full">Social Media Dashboard</h3>
+                        <p class="project-description-full">
+                            Social media analytics dashboard with real-time data visualization, user engagement 
+                            metrics, and comprehensive reporting tools.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card-full fade-in-up" data-category="ui web">
+                    <div class="project-image-full">
+                        <div class="project-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-overlay">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">RxJS</span>
+                            <span class="tag">SCSS</span>
+                        </div>
+                        <h3 class="project-title-full">Weather Application</h3>
+                        <p class="project-description-full">
+                            Beautiful weather app with location-based forecasts, interactive maps, 
+                            weather alerts, and detailed meteorological data.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card-full fade-in-up" data-category="responsive ui">
+                    <div class="project-image-full">
+                        <div class="project-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link-overlay">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content-full">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">GraphQL</span>
+                            <span class="tag">Styled Components</span>
+                        </div>
+                        <h3 class="project-title-full">Recipe & Cooking App</h3>
+                        <p class="project-description-full">
+                            Recipe sharing platform with search functionality, meal planning, shopping lists, 
+                            and step-by-step cooking instructions.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo →</a>
+                            <a href="#" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2 class="cta-title">Have a Project in Mind?</h2>
+                <p class="cta-description">
+                    Let's collaborate and create something amazing together.
+                </p>
+                <a href="contact.html" class="btn btn-light">Start a Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Shady</span><span class="logo-dot">.</span><span class="logo-dev">dev</span>
+                    </a>
+                    <p class="footer-tagline">Building the web, one line at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Connect</h4>
+                        <ul class="footer-list">
+                            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                            <li><a href="mailto:shadygaber.dev@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shady.dev - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/projects.js"></script>
+</body>
+</html>
+

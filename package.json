@@ -1,0 +1,40 @@
+{
+  "name": "shady-dev-portfolio",
+  "version": "1.0.0",
+  "description": "Modern and elegant frontend developer portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx live-server --port=8000 --no-browser",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "developer",
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "dark-mode"
+  ],
+  "author": {
+    "name": "Shady Gaber",
+    "email": "shadygaber.dev@gmail.com",
+    "url": "https://shady.dev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio"
+  },
+  "homepage": "https://shady.dev",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
+
