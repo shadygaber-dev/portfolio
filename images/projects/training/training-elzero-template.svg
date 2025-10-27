@@ -1,0 +1,49 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="60" fill="white"/>
+  <rect x="0" y="60" width="800" height="2" fill="#e9ecef"/>
+  <text x="50" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212529">Elzero</text>
+  
+  <!-- Navigation -->
+  <text x="600" y="25" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Home</text>
+  <text x="650" y="25" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">About</text>
+  <text x="700" y="25" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Services</text>
+  <text x="750" y="25" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Contact</text>
+  
+  <!-- Hero Section -->
+  <text x="400" y="150" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#212529" text-anchor="middle">Welcome to Elzero</text>
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="18" fill="#6c757d" text-anchor="middle">Your trusted partner in web development</text>
+  
+  <!-- Features Grid -->
+  <rect x="50" y="250" width="200" height="150" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="150" y="280" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212529" text-anchor="middle">Web Design</text>
+  <text x="60" y="310" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Creating beautiful and functional websites</text>
+  
+  <rect x="300" y="250" width="200" height="150" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212529" text-anchor="middle">Development</text>
+  <text x="310" y="310" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Building robust web applications</text>
+  
+  <rect x="550" y="250" width="200" height="150" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="650" y="280" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212529" text-anchor="middle">Support</text>
+  <text x="560" y="310" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">24/7 technical support and maintenance</text>
+  
+  <!-- Blog Section -->
+  <rect x="50" y="450" width="350" height="100" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="60" y="480" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Latest Blog Post</text>
+  <text x="60" y="500" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Tips and tricks for modern web development</text>
+  <text x="60" y="520" font-family="Arial, sans-serif" font-size="12" fill="#007bff">Read More →</text>
+  
+  <rect x="450" y="450" width="300" height="100" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="460" y="480" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Newsletter</text>
+  <text x="460" y="500" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Subscribe to our newsletter for updates</text>
+  <text x="460" y="520" font-family="Arial, sans-serif" font-size="12" fill="#007bff">Subscribe →</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="3" fill="#007bff"/>
+  <circle cx="700" cy="120" r="3" fill="#28a745"/>
+  <circle cx="150" cy="500" r="3" fill="#ffc107"/>
+  <circle cx="650" cy="520" r="3" fill="#dc3545"/>
+</svg>

@@ -2,6 +2,39 @@
    COMPONENTS STYLES
    ============================================ */
 
+/* Image Styles */
+.profile-image,
+.profile-image-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.project-img,
+.project-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover,
+.project-img-full:hover {
+    transform: scale(1.05);
+}
+
+.training-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.training-img:hover {
+    transform: scale(1.05);
+}
+
 /* About Section */
 .about-grid {
     display: grid;
@@ -814,5 +847,120 @@
     background: #fee2e2;
     color: #991b1b;
     display: block;
+}
+
+/* ============================================
+   TRAINING PROJECTS STYLES
+   ============================================ */
+
+.training-projects {
+    background: var(--bg-secondary);
+    padding: 6rem 0;
+}
+
+.training-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.training-card {
+    background: var(--bg-primary);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.training-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.training-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.training-content {
+    padding: 1.5rem;
+}
+
+.training-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.training-tag {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+}
+
+.training-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.training-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.training-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.training-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+}
+
+.training-link:hover {
+    color: var(--primary-hover);
+}
+
+/* Professional Projects Section */
+.professional-projects {
+    padding: 6rem 0;
+}
+
+.section-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 

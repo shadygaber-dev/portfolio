@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projects by Shady - Frontend Developer">
     <title>Projects - Shady.dev</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/responsive.css">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
-    
+
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="logo">
                 <span class="logo-text">Shady</span><span class="logo-dot">.</span><span class="logo-dev">dev</span>
             </a>
-            
+
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -37,10 +41,11 @@
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
-            
+
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -51,7 +56,8 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
                 </button>
@@ -80,6 +86,8 @@
         <div class="container">
             <div class="filter-buttons fade-in-up">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="professional">Professional</button>
+                <button class="filter-btn" data-filter="training">Training Projects</button>
                 <button class="filter-btn" data-filter="web">Web Apps</button>
                 <button class="filter-btn" data-filter="ui">UI/UX</button>
                 <button class="filter-btn" data-filter="responsive">Responsive</button>
@@ -87,19 +95,188 @@
         </div>
     </section>
 
-    <!-- Projects Grid -->
-    <section class="section projects-full">
+    <!-- Training Projects Section -->
+    <section class="section training-projects">
         <div class="container">
-            <div class="projects-grid-full">
-                <article class="project-card-full fade-in-up" data-category="web">
-                    <div class="project-image-full">
-                        <div class="project-placeholder">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">LEARNING JOURNEY</span>
+                <h2 class="section-title">Training Projects</h2>
+                <p class="section-description">Early projects I built while learning HTML, CSS, and JavaScript
+                    fundamentals</p>
+            </div>
+            <div class="training-grid">
+                <article class="training-card fade-in-up" data-category="training">
+                    <div class="training-image">
+                        <img src="images/projects/training/training-leon-template.svg"
+                            alt="Leon Template Training Project" class="training-img">
+                        <div class="training-badge">Training Project</div>
+                    </div>
+                    <div class="training-content">
+                        <div class="training-tags">
+                            <span class="tag training-tag">HTML</span>
+                            <span class="tag training-tag">CSS</span>
+                            <span class="tag training-tag">Responsive</span>
                         </div>
+                        <h3 class="training-title">Leon Template</h3>
+                        <p class="training-description">
+                            A creative agency template with modern design and smooth animations.
+                            Learned about CSS Grid, Flexbox, and responsive design principles.
+                        </p>
+                        <div class="training-links">
+                            <a href="https://shadymg.github.io/Leon-Template-one/" target="_blank"
+                                class="training-link">View Project →</a>
+                            <a href="https://github.com/shadymg/Leon-Template-one" target="_blank"
+                                class="training-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="training-card fade-in-up" data-category="training">
+                    <div class="training-image">
+                        <img src="images/projects/training/training-kasper.svg" alt="Kasper Template Training Project"
+                            class="training-img">
+                        <div class="training-badge">Training Project</div>
+                    </div>
+                    <div class="training-content">
+                        <div class="training-tags">
+                            <span class="tag training-tag">HTML</span>
+                            <span class="tag training-tag">CSS</span>
+                            <span class="tag training-tag">JavaScript</span>
+                        </div>
+                        <h3 class="training-title">Kasper Template</h3>
+                        <p class="training-description">
+                            A comprehensive portfolio template with services, portfolio gallery, and pricing sections.
+                            Practiced advanced CSS techniques and JavaScript interactions.
+                        </p>
+                        <div class="training-links">
+                            <a href="https://shadymg.github.io/kasper/" target="_blank" class="training-link">View
+                                Project →</a>
+                            <a href="https://github.com/shadymg/kasper" target="_blank" class="training-link">GitHub
+                                →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="training-card fade-in-up" data-category="training">
+                    <div class="training-image">
+                        <img src="images/projects/training/training-elzero-template.svg"
+                            alt="Elzero Template Training Project" class="training-img">
+                        <div class="training-badge">Training Project</div>
+                    </div>
+                    <div class="training-content">
+                        <div class="training-tags">
+                            <span class="tag training-tag">HTML</span>
+                            <span class="tag training-tag">CSS</span>
+                            <span class="tag training-tag">Animations</span>
+                        </div>
+                        <h3 class="training-title">Elzero Template</h3>
+                        <p class="training-description">
+                            A blog-style template with articles, gallery, and features sections.
+                            Learned about complex layouts, animations, and interactive elements.
+                        </p>
+                        <div class="training-links">
+                            <a href="https://shadymg.github.io/Template-three/" target="_blank"
+                                class="training-link">View Project →</a>
+                            <a href="https://github.com/shadymg/Template-three" target="_blank"
+                                class="training-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="training-card fade-in-up" data-category="training">
+                    <div class="training-image">
+                        <img src="images/projects/training/training-dashboard.svg"
+                            alt="Dashboard Template Training Project" class="training-img">
+                        <div class="training-badge">Training Project</div>
+                    </div>
+                    <div class="training-content">
+                        <div class="training-tags">
+                            <span class="tag training-tag">HTML</span>
+                            <span class="tag training-tag">CSS</span>
+                            <span class="tag training-tag">JavaScript</span>
+                        </div>
+                        <h3 class="training-title">Dashboard Template</h3>
+                        <p class="training-description">
+                            A comprehensive admin dashboard with statistics, charts, and data tables.
+                            Practiced complex layouts, data visualization, and interactive components.
+                        </p>
+                        <div class="training-links">
+                            <a href="https://shadymg.github.io/template4/" target="_blank" class="training-link">View
+                                Project →</a>
+                            <a href="https://github.com/shadymg/template4" target="_blank" class="training-link">GitHub
+                                →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="training-card fade-in-up" data-category="training">
+                    <div class="training-image">
+                        <img src="images/projects/training/training-shady-portfolio.svg"
+                            alt="Shady Portfolio Training Project" class="training-img">
+                        <div class="training-badge">Training Project</div>
+                    </div>
+                    <div class="training-content">
+                        <div class="training-tags">
+                            <span class="tag training-tag">HTML</span>
+                            <span class="tag training-tag">CSS</span>
+                            <span class="tag training-tag">JavaScript</span>
+                        </div>
+                        <h3 class="training-title">Shady Portfolio</h3>
+                        <p class="training-description">
+                            My personal portfolio website with modern design and smooth animations.
+                            Learned about advanced CSS techniques and JavaScript interactions.
+                        </p>
+                        <div class="training-links">
+                            <a href="https://shadymg.github.io/Shady-Portfolio/" target="_blank"
+                                class="training-link">View Project →</a>
+                            <a href="https://github.com/shadymg/Shady-Portfolio" target="_blank"
+                                class="training-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="training-card fade-in-up" data-category="training">
+                    <div class="training-image">
+                        <img src="images/projects/training/training-todo-app.svg" alt="Todo List App Training Project"
+                            class="training-img">
+                        <div class="training-badge">Training Project</div>
+                    </div>
+                    <div class="training-content">
+                        <div class="training-tags">
+                            <span class="tag training-tag">HTML</span>
+                            <span class="tag training-tag">CSS</span>
+                            <span class="tag training-tag">JavaScript</span>
+                        </div>
+                        <h3 class="training-title">Todo List App</h3>
+                        <p class="training-description">
+                            A functional todo list application with add, edit, delete, and mark complete features.
+                            Practiced DOM manipulation, local storage, and user interface design.
+                        </p>
+                        <div class="training-links">
+                            <a href="https://shadymg.github.io/ToDo_List/" target="_blank" class="training-link">View
+                                Project →</a>
+                            <a href="https://github.com/shadymg/ToDo_List" target="_blank" class="training-link">GitHub
+                                →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Projects Section -->
+    <section class="section professional-projects">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">PROFESSIONAL WORK</span>
+                <h2 class="section-title">Professional Projects</h2>
+                <p class="section-description">Advanced projects built with modern frameworks and technologies</p>
+            </div>
+            <div class="projects-grid-full">
+                <article class="project-card-full fade-in-up" data-category="web professional">
+                    <div class="project-image-full">
+                        <img src="images/projects/project-ecommerce-full.jpg" alt="E-Commerce Platform"
+                            class="project-img-full">
                         <div class="project-overlay">
                             <a href="#" class="project-link-overlay">View Project</a>
                         </div>
@@ -112,7 +289,7 @@
                         </div>
                         <h3 class="project-title-full">E-Commerce Platform</h3>
                         <p class="project-description-full">
-                            A comprehensive e-commerce solution featuring product management, shopping cart, 
+                            A comprehensive e-commerce solution featuring product management, shopping cart,
                             payment integration with Stripe, order tracking, and admin dashboard with analytics.
                         </p>
                         <div class="project-links">
@@ -122,13 +299,10 @@
                     </div>
                 </article>
 
-                <article class="project-card-full fade-in-up" data-category="web">
+                <article class="project-card-full fade-in-up" data-category="web professional">
                     <div class="project-image-full">
-                        <div class="project-placeholder">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            </svg>
-                        </div>
+                        <img src="images/projects/project-task-management-full.jpg" alt="Task Management Application"
+                            class="project-img-full">
                         <div class="project-overlay">
                             <a href="#" class="project-link-overlay">View Project</a>
                         </div>
@@ -141,7 +315,7 @@
                         </div>
                         <h3 class="project-title-full">Task Management Application</h3>
                         <p class="project-description-full">
-                            Real-time collaborative task management tool with team workspaces, drag-and-drop 
+                            Real-time collaborative task management tool with team workspaces, drag-and-drop
                             functionality, notifications, and detailed analytics dashboard.
                         </p>
                         <div class="project-links">
@@ -151,15 +325,10 @@
                     </div>
                 </article>
 
-                <article class="project-card-full fade-in-up" data-category="ui responsive">
+                <article class="project-card-full fade-in-up" data-category="ui responsive professional">
                     <div class="project-image-full">
-                        <div class="project-placeholder">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                <polyline points="21 15 16 10 5 21"></polyline>
-                            </svg>
-                        </div>
+                        <img src="images/projects/project-portfolio-full.jpg" alt="Portfolio Website"
+                            class="project-img-full">
                         <div class="project-overlay">
                             <a href="#" class="project-link-overlay">View Project</a>
                         </div>
@@ -172,7 +341,7 @@
                         </div>
                         <h3 class="project-title-full">Portfolio Website</h3>
                         <p class="project-description-full">
-                            Modern portfolio website with blog integration, smooth animations, dark mode, 
+                            Modern portfolio website with blog integration, smooth animations, dark mode,
                             optimized performance, and SEO-friendly structure.
                         </p>
                         <div class="project-links">
@@ -182,16 +351,10 @@
                     </div>
                 </article>
 
-                <article class="project-card-full fade-in-up" data-category="web responsive">
+                <article class="project-card-full fade-in-up" data-category="web responsive professional">
                     <div class="project-image-full">
-                        <div class="project-placeholder">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
-                        </div>
+                        <img src="images/projects/project-social-dashboard-full.jpg" alt="Social Media Dashboard"
+                            class="project-img-full">
                         <div class="project-overlay">
                             <a href="#" class="project-link-overlay">View Project</a>
                         </div>
@@ -204,7 +367,7 @@
                         </div>
                         <h3 class="project-title-full">Social Media Dashboard</h3>
                         <p class="project-description-full">
-                            Social media analytics dashboard with real-time data visualization, user engagement 
+                            Social media analytics dashboard with real-time data visualization, user engagement
                             metrics, and comprehensive reporting tools.
                         </p>
                         <div class="project-links">
@@ -214,15 +377,10 @@
                     </div>
                 </article>
 
-                <article class="project-card-full fade-in-up" data-category="ui web">
+                <article class="project-card-full fade-in-up" data-category="ui web professional">
                     <div class="project-image-full">
-                        <div class="project-placeholder">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                <polyline points="2 17 12 22 22 17"></polyline>
-                                <polyline points="2 12 12 17 22 12"></polyline>
-                            </svg>
-                        </div>
+                        <img src="images/projects/project-weather-app-full.jpg" alt="Weather Application"
+                            class="project-img-full">
                         <div class="project-overlay">
                             <a href="#" class="project-link-overlay">View Project</a>
                         </div>
@@ -235,7 +393,7 @@
                         </div>
                         <h3 class="project-title-full">Weather Application</h3>
                         <p class="project-description-full">
-                            Beautiful weather app with location-based forecasts, interactive maps, 
+                            Beautiful weather app with location-based forecasts, interactive maps,
                             weather alerts, and detailed meteorological data.
                         </p>
                         <div class="project-links">
@@ -245,14 +403,10 @@
                     </div>
                 </article>
 
-                <article class="project-card-full fade-in-up" data-category="responsive ui">
+                <article class="project-card-full fade-in-up" data-category="responsive ui professional">
                     <div class="project-image-full">
-                        <div class="project-placeholder">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                            </svg>
-                        </div>
+                        <img src="images/projects/project-recipe-app-full.jpg" alt="Recipe & Cooking App"
+                            class="project-img-full">
                         <div class="project-overlay">
                             <a href="#" class="project-link-overlay">View Project</a>
                         </div>
@@ -265,7 +419,7 @@
                         </div>
                         <h3 class="project-title-full">Recipe & Cooking App</h3>
                         <p class="project-description-full">
-                            Recipe sharing platform with search functionality, meal planning, shopping lists, 
+                            Recipe sharing platform with search functionality, meal planning, shopping lists,
                             and step-by-step cooking instructions.
                         </p>
                         <div class="project-links">
@@ -297,7 +451,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="index.html" class="footer-logo">
-                        <span class="logo-text">Shady</span><span class="logo-dot">.</span><span class="logo-dev">dev</span>
+                        <span class="logo-text">Shady</span><span class="logo-dot">.</span><span
+                            class="logo-dev">dev</span>
                     </a>
                     <p class="footer-tagline">Building the web, one line at a time.</p>
                 </div>
@@ -340,5 +495,5 @@
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/projects.js"></script>
 </body>
-</html>
 
+</html>

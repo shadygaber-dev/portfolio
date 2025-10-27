@@ -1,0 +1,65 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="70" fill="#1a1a1a"/>
+  <text x="50" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">SHADY</text>
+  <text x="150" y="40" font-family="Arial, sans-serif" font-size="28" fill="#ff6b6b">.</text>
+  <text x="170" y="40" font-family="Arial, sans-serif" font-size="28" fill="white">DEV</text>
+  
+  <!-- Navigation -->
+  <text x="600" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">HOME</text>
+  <text x="650" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">ABOUT</text>
+  <text x="700" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">PROJECTS</text>
+  <text x="760" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">CONTACT</text>
+  
+  <!-- Hero Section -->
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">FRONTEND DEVELOPER</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="24" fill="#bdc3c7" text-anchor="middle">Creative Developer &amp; Problem Solver</text>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="16" fill="#95a5a6" text-anchor="middle">Crafting elegant digital experiences with modern web technologies</text>
+  
+  <!-- CTA Buttons -->
+  <rect x="300" y="300" width="120" height="40" fill="#ff6b6b" rx="20"/>
+  <text x="360" y="325" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">View My Work</text>
+  
+  <rect x="450" y="300" width="120" height="40" fill="transparent" stroke="#ff6b6b" stroke-width="2" rx="20"/>
+  <text x="510" y="325" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff6b6b" text-anchor="middle">Get In Touch</text>
+  
+  <!-- About Section -->
+  <rect x="50" y="380" width="300" height="150" fill="#1a1a1a" rx="10"/>
+  <text x="200" y="410" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">WHO AM I</text>
+  <text x="200" y="440" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">A Passionate Developer</text>
+  <text x="200" y="470" font-family="Arial, sans-serif" font-size="12" fill="#bdc3c7" text-anchor="middle">With years of experience in frontend</text>
+  <text x="200" y="490" font-family="Arial, sans-serif" font-size="12" fill="#bdc3c7" text-anchor="middle">development, I specialize in creating</text>
+  <text x="200" y="510" font-family="Arial, sans-serif" font-size="12" fill="#bdc3c7" text-anchor="middle">responsive and performant applications.</text>
+  
+  <!-- Skills Section -->
+  <rect x="400" y="380" width="350" height="150" fill="#1a1a1a" rx="10"/>
+  <text x="575" y="410" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">MY EXPERTISE</text>
+  
+  <!-- Skill Bars -->
+  <rect x="420" y="430" width="200" height="8" fill="#333" rx="4"/>
+  <rect x="420" y="430" width="160" height="8" fill="#ff6b6b" rx="4"/>
+  <text x="420" y="450" font-family="Arial, sans-serif" font-size="12" fill="white">HTML &amp; CSS</text>
+  
+  <rect x="420" y="460" width="200" height="8" fill="#333" rx="4"/>
+  <rect x="420" y="460" width="140" height="8" fill="#4ecdc4" rx="4"/>
+  <text x="420" y="480" font-family="Arial, sans-serif" font-size="12" fill="white">JavaScript</text>
+  
+  <rect x="420" y="490" width="200" height="8" fill="#333" rx="4"/>
+  <rect x="420" y="490" width="120" height="8" fill="#45b7d1" rx="4"/>
+  <text x="420" y="510" font-family="Arial, sans-serif" font-size="12" fill="white">React</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="3" fill="#ff6b6b"/>
+  <circle cx="700" cy="120" r="3" fill="#4ecdc4"/>
+  <circle cx="150" cy="500" r="3" fill="#45b7d1"/>
+  <circle cx="650" cy="520" r="3" fill="#96ceb4"/>
+  
+  <!-- Floating elements -->
+  <circle cx="100" cy="200" r="2" fill="#ff6b6b" opacity="0.6"/>
+  <circle cx="700" cy="300" r="2" fill="#4ecdc4" opacity="0.6"/>
+  <circle cx="50" cy="400" r="2" fill="#45b7d1" opacity="0.6"/>
+  <circle cx="750" cy="500" r="2" fill="#96ceb4" opacity="0.6"/>
+</svg>

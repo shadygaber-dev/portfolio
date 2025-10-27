@@ -1,0 +1,40 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2c3e50"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="80" fill="#34495e"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">LEON</text>
+  <text x="120" y="45" font-family="Arial, sans-serif" font-size="24" fill="#e74c3c">.</text>
+  
+  <!-- Navigation -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="14" fill="white">SERVICES</text>
+  <text x="680" y="30" font-family="Arial, sans-serif" font-size="14" fill="white">PORTFOLIO</text>
+  <text x="760" y="30" font-family="Arial, sans-serif" font-size="14" fill="white">ABOUT</text>
+  
+  <!-- Hero Section -->
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">HELLO THERE</text>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="24" fill="#bdc3c7" text-anchor="middle">We are Leon - Super Creative &amp; Minimal</text>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="24" fill="#bdc3c7" text-anchor="middle">Agency Web Template</text>
+  
+  <!-- Services Section -->
+  <rect x="50" y="350" width="200" height="150" fill="#34495e" rx="10"/>
+  <text x="150" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">SERVICES</text>
+  <text x="60" y="410" font-family="Arial, sans-serif" font-size="12" fill="#bdc3c7">Don't be busy, be productive</text>
+  
+  <!-- Portfolio Section -->
+  <rect x="300" y="350" width="200" height="150" fill="#34495e" rx="10"/>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">PORTFOLIO</text>
+  <text x="310" y="410" font-family="Arial, sans-serif" font-size="12" fill="#bdc3c7">If you do it right, it will last forever</text>
+  
+  <!-- About Section -->
+  <rect x="550" y="350" width="200" height="150" fill="#34495e" rx="10"/>
+  <text x="650" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">ABOUT</text>
+  <text x="560" y="410" font-family="Arial, sans-serif" font-size="12" fill="#bdc3c7">Less is more work</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="3" fill="#e74c3c"/>
+  <circle cx="700" cy="120" r="3" fill="#e74c3c"/>
+  <circle cx="150" cy="500" r="3" fill="#e74c3c"/>
+  <circle cx="650" cy="520" r="3" fill="#e74c3c"/>
+</svg>

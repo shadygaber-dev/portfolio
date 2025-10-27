@@ -6,6 +6,7 @@ class ProjectsManager {
     constructor() {
         this.filterButtons = document.querySelectorAll('.filter-btn');
         this.projects = document.querySelectorAll('.project-card-full');
+        this.trainingProjects = document.querySelectorAll('.training-card');
         
         this.init();
     }
@@ -24,15 +25,37 @@ class ProjectsManager {
     }
 
     filterProjects(filter) {
+        // Filter professional projects
         this.projects.forEach(project => {
             const categories = project.getAttribute('data-category');
             
             if (filter === 'all') {
                 this.showProject(project);
+            } else if (filter === 'professional' && categories && categories.includes('professional')) {
+                this.showProject(project);
+            } else if (filter === 'training') {
+                this.hideProject(project);
             } else if (categories && categories.includes(filter)) {
                 this.showProject(project);
             } else {
                 this.hideProject(project);
+            }
+        });
+
+        // Filter training projects
+        this.trainingProjects.forEach(project => {
+            const categories = project.getAttribute('data-category');
+            
+            if (filter === 'all') {
+                this.showTrainingProject(project);
+            } else if (filter === 'training' && categories && categories.includes('training')) {
+                this.showTrainingProject(project);
+            } else if (filter === 'professional') {
+                this.hideTrainingProject(project);
+            } else if (categories && categories.includes(filter)) {
+                this.showTrainingProject(project);
+            } else {
+                this.hideTrainingProject(project);
             }
         });
     }
@@ -46,6 +69,22 @@ class ProjectsManager {
     }
 
     hideProject(project) {
+        project.style.opacity = '0';
+        project.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            project.style.display = 'none';
+        }, 300);
+    }
+
+    showTrainingProject(project) {
+        project.style.display = 'block';
+        setTimeout(() => {
+            project.style.opacity = '1';
+            project.style.transform = 'translateY(0)';
+        }, 10);
+    }
+
+    hideTrainingProject(project) {
         project.style.opacity = '0';
         project.style.transform = 'translateY(20px)';
         setTimeout(() => {

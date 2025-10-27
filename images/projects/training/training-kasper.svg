@@ -1,0 +1,49 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="70" fill="#2c2c2c"/>
+  <text x="50" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">KASPER</text>
+  
+  <!-- Navigation -->
+  <text x="600" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">HOME</text>
+  <text x="650" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">SERVICES</text>
+  <text x="720" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">PORTFOLIO</text>
+  <text x="780" y="25" font-family="Arial, sans-serif" font-size="14" fill="white">ABOUT</text>
+  
+  <!-- Hero Section -->
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">HELLO WORLD!</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">We are Kasper We Make Art.</text>
+  
+  <!-- Services Grid -->
+  <rect x="50" y="280" width="150" height="120" fill="#333" rx="5"/>
+  <text x="125" y="310" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">SERVICES</text>
+  <text x="60" y="340" font-family="Arial, sans-serif" font-size="12" fill="#ccc">Curabitur arcu erat, accumsan id</text>
+  
+  <rect x="250" y="280" width="150" height="120" fill="#333" rx="5"/>
+  <text x="325" y="310" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">DESIGN</text>
+  <text x="260" y="340" font-family="Arial, sans-serif" font-size="12" fill="#ccc">Modern and clean design</text>
+  
+  <rect x="450" y="280" width="150" height="120" fill="#333" rx="5"/>
+  <text x="525" y="310" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">PORTFOLIO</text>
+  <text x="460" y="340" font-family="Arial, sans-serif" font-size="12" fill="#ccc">If you do it right, it will last</text>
+  
+  <rect x="650" y="280" width="150" height="120" fill="#333" rx="5"/>
+  <text x="725" y="310" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">ABOUT</text>
+  <text x="660" y="340" font-family="Arial, sans-serif" font-size="12" fill="#ccc">Less is more work</text>
+  
+  <!-- Portfolio Images -->
+  <rect x="50" y="450" width="100" height="80" fill="#555" rx="3"/>
+  <rect x="170" y="450" width="100" height="80" fill="#555" rx="3"/>
+  <rect x="290" y="450" width="100" height="80" fill="#555" rx="3"/>
+  <rect x="410" y="450" width="100" height="80" fill="#555" rx="3"/>
+  <rect x="530" y="450" width="100" height="80" fill="#555" rx="3"/>
+  <rect x="650" y="450" width="100" height="80" fill="#555" rx="3"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="2" fill="#ff6b6b"/>
+  <circle cx="700" cy="120" r="2" fill="#4ecdc4"/>
+  <circle cx="150" cy="500" r="2" fill="#45b7d1"/>
+  <circle cx="650" cy="520" r="2" fill="#96ceb4"/>
+</svg>

@@ -1,0 +1,82 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="200" height="600" fill="#343a40"/>
+  <text x="20" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Dashboard</text>
+  
+  <!-- Sidebar Menu -->
+  <text x="20" y="70" font-family="Arial, sans-serif" font-size="14" fill="#adb5bd">Dashboard</text>
+  <text x="20" y="100" font-family="Arial, sans-serif" font-size="14" fill="#adb5bd">Analytics</text>
+  <text x="20" y="130" font-family="Arial, sans-serif" font-size="14" fill="#adb5bd">Users</text>
+  <text x="20" y="160" font-family="Arial, sans-serif" font-size="14" fill="#adb5bd">Settings</text>
+  
+  <!-- Main Content -->
+  <rect x="200" y="0" width="600" height="60" fill="white"/>
+  <rect x="200" y="60" width="600" height="2" fill="#dee2e6"/>
+  
+  <!-- Header -->
+  <text x="220" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212529">Admin Dashboard</text>
+  <text x="750" y="35" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Welcome, Admin</text>
+  
+  <!-- Stats Cards -->
+  <rect x="220" y="100" width="120" height="80" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="280" y="130" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#28a745" text-anchor="middle">1,234</text>
+  <text x="280" y="150" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="middle">Total Users</text>
+  
+  <rect x="360" y="100" width="120" height="80" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="420" y="130" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#007bff" text-anchor="middle">567</text>
+  <text x="420" y="150" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="middle">Orders</text>
+  
+  <rect x="500" y="100" width="120" height="80" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="560" y="130" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffc107" text-anchor="middle">89</text>
+  <text x="560" y="150" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="middle">Revenue</text>
+  
+  <rect x="640" y="100" width="120" height="80" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="700" y="130" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#dc3545" text-anchor="middle">45</text>
+  <text x="700" y="150" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="middle">Pending</text>
+  
+  <!-- Charts Section -->
+  <rect x="220" y="220" width="350" height="200" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="230" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Analytics Overview</text>
+  
+  <!-- Bar Chart -->
+  <rect x="240" y="300" width="20" height="80" fill="#007bff"/>
+  <rect x="270" y="320" width="20" height="60" fill="#28a745"/>
+  <rect x="300" y="280" width="20" height="100" fill="#ffc107"/>
+  <rect x="330" y="340" width="20" height="40" fill="#dc3545"/>
+  <rect x="360" y="310" width="20" height="70" fill="#6f42c1"/>
+  <rect x="390" y="290" width="20" height="90" fill="#20c997"/>
+  
+  <!-- Recent Activity -->
+  <rect x="590" y="220" width="170" height="200" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="600" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Recent Activity</text>
+  
+  <text x="600" y="270" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• New user registered</text>
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• Order #1234 completed</text>
+  <text x="600" y="310" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• Payment received</text>
+  <text x="600" y="330" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• System backup done</text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">• New message received</text>
+  
+  <!-- Data Table -->
+  <rect x="220" y="450" width="540" height="120" fill="white" stroke="#dee2e6" stroke-width="1" rx="8"/>
+  <text x="230" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#212529">Recent Orders</text>
+  
+  <!-- Table Headers -->
+  <text x="230" y="500" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6c757d">Order ID</text>
+  <text x="330" y="500" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6c757d">Customer</text>
+  <text x="480" y="500" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6c757d">Amount</text>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6c757d">Status</text>
+  
+  <!-- Table Rows -->
+  <text x="230" y="520" font-family="Arial, sans-serif" font-size="12" fill="#212529">#1234</text>
+  <text x="330" y="520" font-family="Arial, sans-serif" font-size="12" fill="#212529">John Doe</text>
+  <text x="480" y="520" font-family="Arial, sans-serif" font-size="12" fill="#212529">$299.00</text>
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="12" fill="#28a745">Completed</text>
+  
+  <text x="230" y="540" font-family="Arial, sans-serif" font-size="12" fill="#212529">#1235</text>
+  <text x="330" y="540" font-family="Arial, sans-serif" font-size="12" fill="#212529">Jane Smith</text>
+  <text x="480" y="540" font-family="Arial, sans-serif" font-size="12" fill="#212529">$149.00</text>
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="12" fill="#ffc107">Pending</text>
+</svg>
