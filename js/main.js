@@ -3,6 +3,7 @@
 // ============================================
 
 // Import Components
+import { VideoSplashManager } from './components/videoSplash.js';
 import { ThemeManager } from './components/theme.js';
 import { ScrollManager } from './components/scroll.js';
 import { NavigationManager } from './components/navigation.js';
@@ -26,6 +27,9 @@ class App {
     }
 
     start() {
+        // Initialize loading splash screen first
+        this.loadingSplash = new VideoSplashManager();
+        
         // Initialize all managers
         this.theme = new ThemeManager();
         this.scroll = new ScrollManager();

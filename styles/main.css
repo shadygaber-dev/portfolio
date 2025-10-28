@@ -4,14 +4,14 @@
 
 /* CSS Variables for Theming - Minimalist Style with Accent */
 :root {
-    /* Minimalist Colors - Black & White with Blue Accent */
+    /* Minimalist Colors - Black & White with Purple Accent */
     --primary-color: #000000;
     --primary-dark: #1a1a1a;
     --primary-light: #333333;
     
-    --accent-color: #2563eb;
-    --accent-light: #3b82f6;
-    --accent-hover: #1d4ed8;
+    --accent-color: #563873;
+    --accent-light: #7d5da1;
+    --accent-hover: #3d2651;
     
     --text-primary: #000000;
     --text-secondary: #666666;
@@ -51,13 +51,13 @@
     --primary-dark: #f5f5f5;
     --primary-light: #e5e5e5;
     
-    --accent-color: #60a5fa;
-    --accent-light: #93c5fd;
-    --accent-hover: #3b82f6;
+    --accent-color: #ffffff;
+    --accent-light: #ffffff;
+    --accent-hover: #000000;
     
     --text-primary: #ffffff;
-    --text-secondary: #b3b3b3;
-    --text-tertiary: #808080;
+    --text-secondary: #e0e0e0;
+    --text-tertiary: #c0c0c0;
     
     --bg-primary: #0a0a0a;
     --bg-secondary: #000000;
@@ -99,6 +99,117 @@ body {
     transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
+/* Prevent scrolling when loading splash is visible */
+body:has(.loading-splash:not(.hidden)) {
+    overflow: hidden !important;
+    height: 100vh;
+}
+
+/* ============================================
+   LOADING SPLASH SCREEN
+   ============================================ */
+
+.loading-splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: var(--bg-primary);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease, visibility 0.8s ease, background 0.3s ease;
+    overflow: hidden;
+}
+
+.loading-splash.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.splash-content {
+    text-align: center;
+    animation: fadeInUp 0.8s ease;
+}
+
+.splash-title {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    letter-spacing: -2px;
+}
+
+.splash-loader {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--text-primary);
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loader-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loader-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.main-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease 0.2s, visibility 0.6s ease 0.2s;
+}
+
+.main-content.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* First 100vh Scale & Opacity Animation */
+.main-content .header,
+.main-content .hero {
+    transform: scale(0.85);
+    opacity: 0.5;
+    filter: blur(6px);
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s, 
+                opacity 0.8s ease 0.2s,
+                filter 0.8s ease 0.2s;
+}
+
+.main-content.visible .header,
+.main-content.visible .hero {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+}
+
 /* ============================================
    SCROLL PROGRESS BAR
    ============================================ */
@@ -135,6 +246,51 @@ body {
 
 [data-theme="dark"] .header {
     background: rgba(10, 10, 10, 0.95);
+}
+
+/* Dark Theme Button Overrides - All White, Hover Black */
+[data-theme="dark"] .btn-primary,
+[data-theme="dark"] .btn-secondary,
+[data-theme="dark"] .btn-outline,
+[data-theme="dark"] .btn-light {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="dark"] .btn-secondary:hover,
+[data-theme="dark"] .btn-outline:hover,
+[data-theme="dark"] .btn-light:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+/* Dark Theme - Better Text Visibility */
+[data-theme="dark"] .hero-subtitle,
+[data-theme="dark"] .section-subtitle {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .hero-description,
+[data-theme="dark"] .about-text,
+[data-theme="dark"] .section-description {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .nav-link {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .nav-link.active::after {
+    background: #ffffff;
 }
 
 .header.scrolled {
@@ -520,9 +676,10 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
-    background: var(--accent-hover);
-    border-color: var(--accent-hover);
+    box-shadow: 0 8px 16px rgba(86, 56, 115, 0.3);
+    background: var(--bg-primary);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .btn-secondary {
@@ -532,10 +689,11 @@ body {
 }
 
 .btn-secondary:hover {
-    background: var(--accent-color);
-    color: var(--bg-primary);
-    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+    background: var(--bg-primary);
+    color: var(--accent-color);
+    box-shadow: 0 8px 16px rgba(86, 56, 115, 0.3);
     transform: translateY(-2px);
+    border-color: var(--accent-color);
 }
 
 .btn-outline {
@@ -545,8 +703,8 @@ body {
 }
 
 .btn-outline:hover {
-    background: var(--accent-color);
-    color: var(--bg-primary);
+    background: var(--bg-primary);
+    color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
@@ -558,7 +716,7 @@ body {
 
 .btn-light:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 8px 16px rgba(86, 56, 115, 0.3);
     background: var(--accent-color);
     color: var(--bg-primary);
     border-color: var(--accent-color);
@@ -657,7 +815,7 @@ body {
     visibility: hidden;
     transition: all var(--transition-normal);
     z-index: 999;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 4px 12px rgba(86, 56, 115, 0.2);
 }
 
 .back-to-top.visible {
@@ -667,8 +825,23 @@ body {
 
 .back-to-top:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 8px 16px rgba(86, 56, 115, 0.4);
     background: var(--accent-hover);
+}
+
+/* Dark Mode Back to Top */
+[data-theme="dark"] .back-to-top {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .back-to-top:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
 }
 
 /* ============================================
@@ -685,6 +858,50 @@ body {
 
 [data-theme="dark"] .footer {
     background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Dark Mode Footer Text Fixes */
+[data-theme="dark"] .footer-logo .logo-text,
+[data-theme="dark"] .footer-logo .logo-dot,
+[data-theme="dark"] .footer-logo .logo-dev {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .footer-tagline {
+    color: #b0b0b0;
+}
+
+[data-theme="dark"] .footer-title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .footer-list a {
+    color: #b0b0b0;
+}
+
+[data-theme="dark"] .footer-list a:hover {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .footer-list a::after {
+    background: #ffffff;
+}
+
+[data-theme="dark"] .footer-bottom {
+    color: #909090;
+    border-top: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .footer-social-link {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #b0b0b0;
+}
+
+[data-theme="dark"] .footer-social-link:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
 }
 
 .footer-content {
