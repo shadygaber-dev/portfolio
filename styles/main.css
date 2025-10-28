@@ -128,6 +128,9 @@ body {
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
     transition: all var(--transition-normal);
+    height: 70px;
+    align-items: center;
+    align-content: center;
 }
 
 [data-theme="dark"] .header {
