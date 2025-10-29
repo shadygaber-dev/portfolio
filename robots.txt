@@ -1,0 +1,14 @@
+# robots.txt for https://shadygaber-dev.github.io/portfolio/
+
+User-agent: *
+Allow: /
+
+# Disallow private files
+Disallow: /js/
+Disallow: /styles/
+Disallow: /*.json
+Disallow: /*.md
+
+# Sitemap location
+Sitemap: https://shadygaber-dev.github.io/portfolio/sitemap.xml
+

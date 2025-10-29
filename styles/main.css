@@ -2,29 +2,47 @@
    MAIN STYLES - Portfolio Website
    ============================================ */
 
-/* CSS Variables for Theming - Minimalist Style with Accent */
+/* CSS Variables for Theming - Monochrome Black & Gray Palette */
 :root {
-    /* Minimalist Colors - Black & White with Purple Accent */
-    --primary-color: #000000;
-    --primary-dark: #1a1a1a;
-    --primary-light: #333333;
+    /* Black & Gray Color Scale */
+    --black-50: #f6f6f6;
+    --black-100: #e7e7e7;
+    --black-200: #d1d1d1;
+    --black-300: #b0b0b0;
+    --black-400: #888888;
+    --black-500: #6d6d6d;
+    --black-600: #5d5d5d;
+    --black-700: #4f4f4f;
+    --black-800: #454545;
+    --black-900: #3d3d3d;
+    --black-950: #000000;
     
-    --accent-color: #563873;
-    --accent-light: #7d5da1;
-    --accent-hover: #3d2651;
+    /* Primary Colors - Light Mode */
+    --primary-color: var(--black-950);
+    --primary-dark: var(--black-900);
+    --primary-light: var(--black-800);
     
-    --text-primary: #000000;
-    --text-secondary: #666666;
-    --text-tertiary: #999999;
+    /* Accent Colors - Dark Gray for emphasis */
+    --accent-color: var(--black-800);
+    --accent-light: var(--black-700);
+    --accent-hover: var(--black-950);
     
+    /* Text Colors */
+    --text-primary: var(--black-950);
+    --text-secondary: var(--black-500);
+    --text-tertiary: var(--black-400);
+    
+    /* Background Colors */
     --bg-primary: #ffffff;
-    --bg-secondary: #fafafa;
-    --bg-tertiary: #f5f5f5;
-    --bg-accent: #f7f7f7;
+    --bg-secondary: var(--black-50);
+    --bg-tertiary: var(--black-100);
+    --bg-accent: var(--black-100);
     
-    --border-color: #e5e5e5;
-    --border-accent: #d1d5db;
+    /* Border Colors */
+    --border-color: var(--black-200);
+    --border-accent: var(--black-300);
     
+    /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
@@ -45,28 +63,34 @@
     --transition-slow: 0.6s ease;
 }
 
-/* Dark Theme - Minimalist with Accent */
+/* Dark Theme - Monochrome Inverted */
 [data-theme="dark"] {
+    /* Primary Colors - Dark Mode */
     --primary-color: #ffffff;
-    --primary-dark: #f5f5f5;
-    --primary-light: #e5e5e5;
+    --primary-dark: var(--black-100);
+    --primary-light: var(--black-200);
     
-    --accent-color: #ffffff;
-    --accent-light: #ffffff;
-    --accent-hover: #000000;
+    /* Accent Colors - Light Gray for emphasis */
+    --accent-color: var(--black-200);
+    --accent-light: var(--black-100);
+    --accent-hover: #ffffff;
     
+    /* Text Colors */
     --text-primary: #ffffff;
-    --text-secondary: #e0e0e0;
-    --text-tertiary: #c0c0c0;
+    --text-secondary: var(--black-200);
+    --text-tertiary: var(--black-300);
     
-    --bg-primary: #0a0a0a;
-    --bg-secondary: #000000;
-    --bg-tertiary: #1a1a1a;
-    --bg-accent: #111111;
+    /* Background Colors */
+    --bg-primary: var(--black-950);
+    --bg-secondary: var(--black-900);
+    --bg-tertiary: var(--black-800);
+    --bg-accent: var(--black-900);
     
-    --border-color: #333333;
-    --border-accent: #404040;
+    /* Border Colors */
+    --border-color: var(--black-700);
+    --border-accent: var(--black-600);
     
+    /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(255, 255, 255, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(255, 255, 255, 0.05);
     --shadow-lg: 0 10px 15px -3px rgba(255, 255, 255, 0.08);
@@ -123,7 +147,7 @@ body:has(.loading-splash:not(.hidden)) {
     justify-content: center;
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.8s ease, visibility 0.8s ease, background 0.3s ease;
+    transition: opacity 0.4s ease, visibility 0.4s ease, background 0.3s ease;
     overflow: hidden;
 }
 
@@ -135,7 +159,7 @@ body:has(.loading-splash:not(.hidden)) {
 
 .splash-content {
     text-align: center;
-    animation: fadeInUp 0.8s ease;
+    animation: fadeInUp 0.4s ease-out;
 }
 
 .splash-title {
@@ -159,7 +183,7 @@ body:has(.loading-splash:not(.hidden)) {
     height: 12px;
     background: var(--text-primary);
     border-radius: 50%;
-    animation: bounce 1.4s infinite ease-in-out both;
+    animation: bounce 0.9s infinite ease-in-out both;
 }
 
 .loader-dot:nth-child(1) {
@@ -184,7 +208,7 @@ body:has(.loading-splash:not(.hidden)) {
 .main-content {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.6s ease 0.2s, visibility 0.6s ease 0.2s;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .main-content.visible {
@@ -192,15 +216,16 @@ body:has(.loading-splash:not(.hidden)) {
     visibility: visible;
 }
 
-/* First 100vh Scale & Opacity Animation */
+/* First 100vh Scale & Opacity Animation - Faster */
 .main-content .header,
 .main-content .hero {
-    transform: scale(0.85);
-    opacity: 0.5;
-    filter: blur(6px);
-    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s, 
-                opacity 0.8s ease 0.2s,
-                filter 0.8s ease 0.2s;
+    transform: scale(0.92);
+    opacity: 0.6;
+    filter: blur(3px);
+    transition: transform 0.5s cubic-bezier(0.34, 1.2, 0.64, 1), 
+                opacity 0.4s ease,
+                filter 0.4s ease;
+    will-change: transform, opacity, filter;
 }
 
 .main-content.visible .header,
@@ -208,6 +233,7 @@ body:has(.loading-splash:not(.hidden)) {
     transform: scale(1);
     opacity: 1;
     filter: blur(0);
+    will-change: auto;
 }
 
 /* ============================================

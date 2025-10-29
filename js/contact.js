@@ -7,11 +7,23 @@ class ContactManager {
         this.form = document.getElementById('contactForm');
         this.formMessage = document.getElementById('formMessage');
         
+        // EmailJS Configuration
+        this.emailConfig = {
+            serviceID: 'service_lvxsfue',
+            templateID: 'template_72grn2i', // Replace with your EmailJS Template ID
+            publicKey: 'QosfeuK89dkjfd6uL'    // Replace with your EmailJS Public Key
+        };
+        
         this.init();
     }
 
     init() {
         if (!this.form) return;
+
+        // Initialize EmailJS
+        if (typeof emailjs !== 'undefined') {
+            emailjs.init(this.emailConfig.publicKey);
+        }
 
         this.form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -62,35 +74,34 @@ class ContactManager {
     }
 
     async sendEmail(data) {
-        // Simulate API call
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                console.log('Form data:', data);
-                resolve();
-            }, 1500);
-        });
-
-        // Actual implementation would use an email service like:
-        // - EmailJS
-        // - Formspree
-        // - Your own backend API
-        
-        // Example with fetch:
-        /*
-        const response = await fetch('YOUR_API_ENDPOINT', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        });
-        
-        if (!response.ok) {
-            throw new Error('Failed to send email');
+        // Check if EmailJS is loaded
+        if (typeof emailjs === 'undefined') {
+            throw new Error('EmailJS is not loaded');
         }
-        
-        return response.json();
-        */
+
+        // Prepare template parameters
+        const templateParams = {
+            from_name: data.name,
+            from_email: data.email,
+            subject: data.subject,
+            message: data.message,
+            to_name: 'Shady' // Your name
+        };
+
+        try {
+            // Send email using EmailJS
+            const response = await emailjs.send(
+                this.emailConfig.serviceID,
+                this.emailConfig.templateID,
+                templateParams
+            );
+            
+            console.log('Email sent successfully:', response);
+            return response;
+        } catch (error) {
+            console.error('EmailJS Error:', error);
+            throw error;
+        }
     }
 
     validateForm() {

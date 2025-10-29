@@ -1,0 +1,37 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d3d3d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#grad)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="150" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1100" cy="530" r="200" fill="rgba(255,255,255,0.05)"/>
+  
+  <!-- Main Content -->
+  <text x="600" y="250" font-family="'Playfair Display', serif" font-size="72" font-weight="700" fill="white" text-anchor="middle">
+    Shady Gaber
+  </text>
+  
+  <text x="600" y="320" font-family="'Poppins', sans-serif" font-size="36" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+    Frontend Developer
+  </text>
+  
+  <text x="600" y="380" font-family="'Poppins', sans-serif" font-size="24" fill="rgba(255,255,255,0.7)" text-anchor="middle">
+    Building elegant digital experiences
+  </text>
+  
+  <!-- Website URL -->
+  <text x="600" y="500" font-family="'Poppins', sans-serif" font-size="20" fill="rgba(255,255,255,0.6)" text-anchor="middle">
+    shadygaber-dev.github.io/portfolio
+  </text>
+  
+  <!-- Logo/Brand Mark -->
+  <circle cx="600" cy="100" r="3" fill="white"/>
+</svg>
+

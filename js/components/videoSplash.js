@@ -30,7 +30,7 @@ export class VideoSplashManager {
         // Hide splash after 3 seconds
         setTimeout(() => {
             this.hideSplash();
-        }, 3000);
+        }, 1500);
     }
 
     hideSplash() {
