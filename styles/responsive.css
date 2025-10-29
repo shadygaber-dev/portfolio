@@ -38,6 +38,25 @@
         --section-padding: 60px;
     }
     
+    /* Tech Stack Loop */
+    .tech-stack-loop {
+        padding: 40px 0;
+    }
+    
+    .tech-stack-track {
+        gap: 40px;
+    }
+    
+    .tech-logo {
+        min-width: 80px;
+        padding: 15px;
+    }
+    
+    .tech-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
     /* Navigation */
     .nav-toggle {
         display: flex;
@@ -387,8 +406,33 @@
 
 /* Extra Small Mobile (360px) */
 @media (max-width: 360px) {
+    /* Hero Section */
     .hero-title {
         font-size: 1.75rem;
+    }
+    
+    /* Tech Stack Loop */
+    .tech-stack-loop {
+        padding: 30px 0;
+    }
+    
+    .tech-stack-track {
+        gap: 30px;
+        animation: scrollLogosLight 20s linear infinite;
+    }
+    
+    [data-theme="dark"] .tech-stack-track {
+        animation: scrollLogosDark 18s linear infinite;
+    }
+    
+    .tech-logo {
+        min-width: 70px;
+        padding: 10px;
+    }
+    
+    .tech-icon {
+        width: 50px;
+        height: 50px;
     }
     
     .page-title {

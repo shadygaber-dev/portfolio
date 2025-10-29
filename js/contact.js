@@ -52,11 +52,17 @@ class ContactManager {
         // Show loading state
         const submitButton = this.form.querySelector('button[type="submit"]');
         const originalText = submitButton.innerHTML;
+        const originalHeight = submitButton.offsetHeight;
+        const originalWidth = submitButton.offsetWidth;
+        
         submitButton.disabled = true;
-        submitButton.innerHTML = 'Sending...';
+        submitButton.style.minHeight = originalHeight + 'px';
+        submitButton.style.height = originalHeight + 'px';
+        submitButton.style.width = originalWidth + 'px';
+        submitButton.textContent = 'Sending...';
 
         try {
-            // Simulate sending email (replace with actual implementation)
+            // Send email via EmailJS
             await this.sendEmail(data);
             
             // Success
@@ -70,6 +76,9 @@ class ContactManager {
             // Reset button
             submitButton.disabled = false;
             submitButton.innerHTML = originalText;
+            submitButton.style.minHeight = '';
+            submitButton.style.height = '';
+            submitButton.style.width = '';
         }
     }
 
@@ -83,9 +92,11 @@ class ContactManager {
         const templateParams = {
             from_name: data.name,
             from_email: data.email,
+            reply_to: data.email,
+            to_email: 'shadygaber.dev@gmail.com',
             subject: data.subject,
             message: data.message,
-            to_name: 'Shady' // Your name
+            to_name: 'Shady'
         };
 
         try {
@@ -184,13 +195,14 @@ class ContactManager {
     }
 
     showMessage(message, type) {
+        if (!this.formMessage) return;
+        
         this.formMessage.textContent = message;
         this.formMessage.className = `form-message ${type}`;
-        this.formMessage.style.display = 'block';
 
         // Auto hide after 5 seconds
         setTimeout(() => {
-            this.formMessage.style.display = 'none';
+            this.formMessage.className = 'form-message';
         }, 5000);
     }
 }

@@ -8,6 +8,7 @@ import { ThemeManager } from './components/theme.js';
 import { ScrollManager } from './components/scroll.js';
 import { NavigationManager } from './components/navigation.js';
 import { AnimationManager } from './components/animations.js';
+import { ParticlesManager } from './components/particles.js';
 import { initLetterAnimation } from './components/letterAnimation.js';
 import { initScrollIndicator } from './components/scrollIndicator.js';
 
@@ -35,6 +36,9 @@ class App {
         this.scroll = new ScrollManager();
         this.navigation = new NavigationManager();
         this.animation = new AnimationManager();
+        
+        // Initialize particles background for entire site
+        this.particles = new ParticlesManager();
 
         // Initialize letter animation for hero title
         initLetterAnimation();

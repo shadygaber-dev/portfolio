@@ -4,44 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>Shady Gaber - Frontend Developer | Modern Web Development Portfolio</title>
     <meta name="title" content="Shady Gaber - Frontend Developer | Modern Web Development Portfolio">
-    <meta name="description" content="Frontend Developer specializing in modern web applications. Expert in HTML, CSS, JavaScript, React, and responsive design. View my portfolio and projects.">
-    <meta name="keywords" content="Frontend Developer, Web Developer, React Developer, JavaScript, HTML, CSS, Portfolio, Shady Gaber, Web Design">
+    <meta name="description"
+        content="Frontend Developer specializing in modern web applications. Expert in HTML, CSS, JavaScript, React, and responsive design. View my portfolio and projects.">
+    <meta name="keywords"
+        content="Frontend Developer, Web Developer, React Developer, JavaScript, HTML, CSS, Portfolio, Shady Gaber, Web Design">
     <meta name="author" content="Shady Gaber">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shadygaber-dev.github.io/portfolio/">
     <meta property="og:title" content="Shady Gaber - Frontend Developer | Modern Web Development Portfolio">
-    <meta property="og:description" content="Frontend Developer specializing in modern web applications. Expert in HTML, CSS, JavaScript, React, and responsive design.">
+    <meta property="og:description"
+        content="Frontend Developer specializing in modern web applications. Expert in HTML, CSS, JavaScript, React, and responsive design.">
     <meta property="og:image" content="https://shadygaber-dev.github.io/portfolio/images/social-preview.png">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://shadygaber-dev.github.io/portfolio/">
     <meta property="twitter:title" content="Shady Gaber - Frontend Developer | Modern Web Development Portfolio">
-    <meta property="twitter:description" content="Frontend Developer specializing in modern web applications. Expert in HTML, CSS, JavaScript, React, and responsive design.">
+    <meta property="twitter:description"
+        content="Frontend Developer specializing in modern web applications. Expert in HTML, CSS, JavaScript, React, and responsive design.">
     <meta property="twitter:image" content="https://shadygaber-dev.github.io/portfolio/images/social-preview.png">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="alternate icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://shadygaber-dev.github.io/portfolio/">
-    
+
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
@@ -65,418 +71,599 @@
 
     <!-- Main Content Wrapper -->
     <div class="main-content" id="mainContent">
-    
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Header -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="index.html" class="logo">
-                <span class="logo-text">Shady</span><span class="logo-dot">.</span><span class="logo-dev">dev</span>
-            </a>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scrollProgress"></div>
 
-            <div class="nav-menu" id="navMenu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
+        <!-- Header -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Shady</span><span class="logo-dot">.</span><span class="logo-dev">dev</span>
+                </a>
 
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-background">
-            <div class="hero-gradient"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content fade-in">
-                <div class="hero-subtitle">FRONTEND DEVELOPER</div>
-                <h1 class="hero-title">
-                    <span class="line">CREATIVE</span>
-                    <span class="line">DEVELOPER &</span>
-                    <span class="line">PROBLEM SOLVER</span>
-                </h1>
-                <p class="hero-description">
-                    Crafting elegant digital experiences with modern web technologies
-                </p>
-                <div class="hero-buttons">
-                    <a href="projects.html" class="btn btn-primary">View My Work</a>
-                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-line"></div>
-                <span>Scroll Down</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Preview -->
-    <section class="section about-preview" id="aboutPreview">
-        <div class="container">
-            <div class="section-header fade-in-up">
-                <span class="section-subtitle">WHO AM I</span>
-                <h2 class="section-title">A Passionate Developer Who Loves Clean Code</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-image fade-in-left">
-                    <div class="image-wrapper">
-                        <img src="images/Untitled design.svg" 
-                             alt="Shady Gaber - Frontend Developer working on modern web applications"
-                             class="profile-image"
-                             loading="lazy"
-                             width="400"
-                             height="400">
-                    </div>
-                </div>
-                <div class="about-content fade-in-right">
-                    <p class="about-text">
-                        With years of experience in frontend development, I specialize in creating
-                        <strong>responsive</strong>, <strong>accessible</strong>, and <strong>performant</strong>
-                        web applications using modern technologies.
-                    </p>
-                    <p class="about-text">
-                        My approach combines technical expertise with creative problem-solving to deliver
-                        exceptional user experiences that make a difference.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="3">0</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="10">0</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="8">0</span>
-                            <span class="stat-label">Happy Clients</span>
-                        </div>
-                    </div>
-                    <a href="about.html" class="btn btn-outline">Learn More About Me</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section class="section expertise" id="expertise">
-        <div class="container">
-            <div class="section-header fade-in-up">
-                <span class="section-subtitle">WHAT I DO</span>
-                <h2 class="section-title">My Expertise</h2>
-            </div>
-            <div class="expertise-grid">
-                <div class="expertise-card fade-in-up">
-                    <div class="expertise-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="expertise-title">Frontend Development</h3>
-                    <p class="expertise-description">
-                        Building modern, responsive websites with HTML5, CSS3, JavaScript, and Bootstrap.
-                        Learning React.js to create dynamic web applications.
-                    </p>
-                </div>
-                <div class="expertise-card fade-in-up">
-                    <div class="expertise-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3 class="expertise-title">UI/UX Design</h3>
-                    <p class="expertise-description">
-                        Creating intuitive user interfaces with focus on user experience,
-                        accessibility, and modern design principles.
-                    </p>
-                </div>
-                <div class="expertise-card fade-in-up">
-                    <div class="expertise-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </div>
-                    <h3 class="expertise-title">Research & Problem Solving</h3>
-                    <p class="expertise-description">
-                        Strong research and analytical skills to find solutions and learn new technologies.
-                        AI prompting expertise for enhanced productivity.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Preview -->
-    <section class="section projects-preview" id="projectsPreview">
-        <div class="container">
-            <div class="section-header fade-in-up">
-                <span class="section-subtitle">MY WORK</span>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            <div class="projects-grid">
-               <article class="training-card fade-in-up" data-category="training">
-                    <div class="training-image">
-                        <img src="images/projects/training/training-elzero-template.svg"
-                            alt="Elzero Template Training Project" class="training-img">
-                        <div class="training-badge">Training Project</div>
-                    </div>
-                    <div class="training-content">
-                        <div class="training-tags">
-                            <span class="tag training-tag">HTML</span>
-                            <span class="tag training-tag">CSS</span>
-                            <span class="tag training-tag">Animations</span>
-                        </div>
-                        <h3 class="training-title">Elzero Template</h3>
-                        <p class="training-description">
-                            A blog-style template with articles, gallery, and features sections.
-                            Learned about complex layouts, animations, and interactive elements.
-                        </p>
-                        <div class="training-links">
-                            <a href="https://shadymg.github.io/Template-three/" target="_blank"
-                                class="training-link">View Project →</a>
-                            <a href="https://github.com/shadymg/Template-three" target="_blank"
-                                class="training-link">GitHub →</a>
-                        </div>
-                    </div>
-                </article>
-       <article class="training-card fade-in-up" data-category="training">
-                    <div class="training-image">
-                        <img src="images/projects/training/training-dashboard.svg"
-                            alt="Dashboard Template Training Project" class="training-img">
-                        <div class="training-badge">Training Project</div>
-                    </div>
-                    <div class="training-content">
-                        <div class="training-tags">
-                            <span class="tag training-tag">HTML</span>
-                            <span class="tag training-tag">CSS</span>
-                            <span class="tag training-tag">JavaScript</span>
-                        </div>
-                        <h3 class="training-title">Dashboard Template</h3>
-                        <p class="training-description">
-                            A comprehensive admin dashboard with statistics, charts, and data tables.
-                            Practiced complex layouts, data visualization, and interactive components.
-                        </p>
-                        <div class="training-links">
-                            <a href="https://shadymg.github.io/template4/" target="_blank" class="training-link">View
-                                Project →</a>
-                            <a href="https://github.com/shadymg/template4" target="_blank" class="training-link">GitHub
-                                →</a>
-                        </div>
-                    </div>
-                </article>
-<article class="training-card fade-in-up" data-category="training">
-                    <div class="training-image">
-                        <img src="images/projects/training/training-kasper.svg" alt="Kasper Template Training Project"
-                            class="training-img">
-                        <div class="training-badge">Training Project</div>
-                    </div>
-                    <div class="training-content">
-                        <div class="training-tags">
-                            <span class="tag training-tag">HTML</span>
-                            <span class="tag training-tag">CSS</span>
-                            <span class="tag training-tag">JavaScript</span>
-                        </div>
-                        <h3 class="training-title">Kasper Template</h3>
-                        <p class="training-description">
-                            A comprehensive portfolio template with services, portfolio gallery, and pricing sections.
-                            Practiced advanced CSS techniques and JavaScript interactions.
-                        </p>
-                        <div class="training-links">
-                            <a href="https://shadymg.github.io/kasper/" target="_blank" class="training-link">View
-                                Project →</a>
-                            <a href="https://github.com/shadymg/kasper" target="_blank" class="training-link">GitHub
-                                →</a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-            <div class="section-footer">
-                <a href="projects.html" class="btn btn-primary">View All Projects</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header fade-in-up">
-                <span class="section-subtitle">TESTIMONIALS</span>
-                <h2 class="section-title">What Clients Say</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in-up">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">
-                            "Exceptional work! The website exceeded our expectations. Professional,
-                            responsive, and delivered on time. Highly recommended!"
-                        </p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JD</div>
-                        <div class="author-info">
-                            <h4 class="author-name">John Doe</h4>
-                            <p class="author-title">CEO at TechCorp</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in-up">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">
-                            "A talented developer who understands both design and functionality.
-                            Great communication and problem-solving skills."
-                        </p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SM</div>
-                        <div class="author-info">
-                            <h4 class="author-name">Sarah Miller</h4>
-                            <p class="author-title">Product Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-in-up">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">
-                            "Impressed by the attention to detail and clean code. The project was
-                            well-structured and easy to maintain."
-                        </p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MB</div>
-                        <div class="author-info">
-                            <h4 class="author-name">Michael Brown</h4>
-                            <p class="author-title">Tech Lead</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section cta" id="cta">
-        <div class="container">
-            <div class="cta-content fade-in-up">
-                <h2 class="cta-title">Let's Work Together</h2>
-                <p class="cta-description">
-                    Have a project in mind? Let's discuss how we can bring your ideas to life.
-                </p>
-                <a href="contact.html" class="btn btn-light">Start a Conversation</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">
-                        <span class="logo-text">Shady</span><span class="logo-dot">.</span><span
-                            class="logo-dev">dev</span>
-                    </a>
-                    <p class="footer-tagline">Frontend Developer crafting elegant and modern web experiences with clean
-                        code and creative solutions.</p>
-                </div>
-                <div class="footer-column">
-                    <h4 class="footer-title">Navigation</h4>
-                    <ul class="footer-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4 class="footer-title">Connect</h4>
-                    <ul class="footer-list">
-                        <li><a href="https://github.com/shadygaber-dev" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/shadygaber-dev/" target="_blank" rel="noopener">LinkedIn</a></li>
-                        <li><a href="mailto:shadygaber.dev@gmail.com">Email</a></li>
-                    </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <div class="footer-column">
-                    <h4 class="footer-title">Legal</h4>
-                    <ul class="footer-list">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <div class="hero-subtitle">FRONTEND DEVELOPER</div>
+                    <h1 class="hero-title">
+                        <span class="line">CREATIVE</span>
+                        <span class="line">DEVELOPER </span>
+                        <span class="line">PROBLEM SOLVER</span>
+                    </h1>
+                    <p class="hero-description">
+                        Crafting elegant digital experiences with modern web technologies
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+
+                <!-- Tech Stack in Hero -->
+                <div class="hero-tech-loop">
+                    <div class="tech-stack-wrapper">
+                        <div class="tech-stack-track">
+                            <!-- HTML5 -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#E34F26" d="M19.67 26.04h109.6v75.92H19.67z"></path>
+                                    <path fill="#E34F26"
+                                        d="M64 28L47.4 107h33.2L64 28zm-16.2 38.4l1.6 16h29.2l-2 24-12.6 3.2-12.6-3.2-.8-10h-12l1.6 20 23.4 6 23.4-6 3.2-38H47.8z">
+                                    </path>
+                                </svg></div>
+                            <!-- CSS3 -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#1572B6"
+                                        d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z">
+                                    </path>
+                                    <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z">
+                                    </path>
+                                    <path fill="#EBEBEB"
+                                        d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z">
+                                    </path>
+                                    <path fill="#EBEBEB"
+                                        d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.331-3.711h16.44z">
+                                    </path>
+                                </svg></div>
+                            <!-- JavaScript -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+                                    <path fill="#323330"
+                                        d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
+                                    </path>
+                                </svg></div>
+                            <!-- React -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <g fill="#61DAFB">
+                                        <circle cx="64" cy="64" r="11.4"></circle>
+                                        <path
+                                            d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21.8c-1.2-2.1-2.4-4.2-3.6-6-1.2-2-2.3-3.9-3.4-5.9 3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zm-11.4-14.7c-1.6 1.3-3.2 2.7-4.8 4.2-1.6-1.5-3.2-2.9-4.8-4.2h9.6zM35.8 14.7c4.1-2.4 11.5 2.3 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6-1.8-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9zm-24.5 73.1c-4.5-2.4-7.2-6-7.2-9.8 0-3.7 2.7-7.3 7.2-9.8 2.7-1.5 5.7-2.8 9-3.8 1.5 5.1 3.3 10.5 5.4 16.2-2.1 5.7-3.9 11.1-5.4 16.2-3.3-1.1-6.3-2.4-9-3.9zm13.1 29.8c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c.3 2.1.8 4.3 1.4 6.6 1.8 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6.2 0-13.7-5.1-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5zM109.1 87.8c-2.7 1.5-5.7 2.8-9 3.8-1.5-5.1-3.3-10.5-5.4-16.2 2.1-5.7 3.9-11.1 5.4-16.2 3.3 1.1 6.3 2.4 9 3.9 4.5 2.4 7.2 6 7.2 9.8 0 3.8-2.7 7.4-7.2 9.9z">
+                                        </path>
+                                    </g>
+                                </svg></div>
+                            <!-- Tailwind CSS -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#38BDF8"
+                                        d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64z">
+                                    </path>
+                                </svg></div>
+                            <!-- TypeScript -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#007ACC"
+                                        d="M2 63.91v62.5h125v-125H2zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H57.16v46.23H45.65V69.26H29.38v-5a49.19 49.19 0 01.14-5.16c.06-.08 10-.12 22-.1h21.81z">
+                                    </path>
+                                </svg></div>
+                            <!-- Bootstrap -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#7952B3"
+                                        d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.637-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z">
+                                    </path>
+                                </svg></div>
+                            <!-- Node.js -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#83CD29"
+                                        d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z">
+                                    </path>
+                                </svg></div>
+                            <!-- Git -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#F05032"
+                                        d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z">
+                                    </path>
+                                </svg></div>
+                            <!-- GitHub -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon github-icon">
+                                    <g fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
+                                        </path>
+                                        <path
+                                            d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
+                                        </path>
+                                    </g>
+                                </svg></div>
+
+                            <!-- Duplicate for seamless loop -->
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#E34F26" d="M19.67 26.04h109.6v75.92H19.67z"></path>
+                                    <path fill="#E34F26"
+                                        d="M64 28L47.4 107h33.2L64 28zm-16.2 38.4l1.6 16h29.2l-2 24-12.6 3.2-12.6-3.2-.8-10h-12l1.6 20 23.4 6 23.4-6 3.2-38H47.8z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#1572B6"
+                                        d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z">
+                                    </path>
+                                    <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z">
+                                    </path>
+                                    <path fill="#EBEBEB"
+                                        d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z">
+                                    </path>
+                                    <path fill="#EBEBEB"
+                                        d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.331-3.711h16.44z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+                                    <path fill="#323330"
+                                        d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <g fill="#61DAFB">
+                                        <circle cx="64" cy="64" r="11.4"></circle>
+                                        <path
+                                            d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21.8c-1.2-2.1-2.4-4.2-3.6-6-1.2-2-2.3-3.9-3.4-5.9 3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zm-11.4-14.7c-1.6 1.3-3.2 2.7-4.8 4.2-1.6-1.5-3.2-2.9-4.8-4.2h9.6zM35.8 14.7c4.1-2.4 11.5 2.3 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6-1.8-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9zm-24.5 73.1c-4.5-2.4-7.2-6-7.2-9.8 0-3.7 2.7-7.3 7.2-9.8 2.7-1.5 5.7-2.8 9-3.8 1.5 5.1 3.3 10.5 5.4 16.2-2.1 5.7-3.9 11.1-5.4 16.2-3.3-1.1-6.3-2.4-9-3.9zm13.1 29.8c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c.3 2.1.8 4.3 1.4 6.6 1.8 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6.2 0-13.7-5.1-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5zM109.1 87.8c-2.7 1.5-5.7 2.8-9 3.8-1.5-5.1-3.3-10.5-5.4-16.2 2.1-5.7 3.9-11.1 5.4-16.2 3.3 1.1 6.3 2.4 9 3.9 4.5 2.4 7.2 6 7.2 9.8 0 3.8-2.7 7.4-7.2 9.9z">
+                                        </path>
+                                    </g>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#38BDF8"
+                                        d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#007ACC"
+                                        d="M2 63.91v62.5h125v-125H2zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H57.16v46.23H45.65V69.26H29.38v-5a49.19 49.19 0 01.14-5.16c.06-.08 10-.12 22-.1h21.81z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#7952B3"
+                                        d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.637-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#83CD29"
+                                        d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon">
+                                    <path fill="#F05032"
+                                        d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z">
+                                    </path>
+                                </svg></div>
+                            <div class="tech-logo"><svg viewBox="0 0 128 128" class="tech-icon github-icon">
+                                    <g fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
+                                        </path>
+                                        <path
+                                            d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
+                                        </path>
+                                    </g>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span>Scroll Down</span>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Shady.dev - All rights reserved</p>
-                <div class="footer-social">
-                    <a href="https://github.com/shadygaber-dev" target="_blank" rel="noopener" class="footer-social-link"
-                        aria-label="GitHub">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shadygaber-dev/" target="_blank" rel="noopener" class="footer-social-link"
-                        aria-label="LinkedIn">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                    </a>
+        </section>
+
+        <!-- About Preview -->
+        <section class="section about-preview" id="aboutPreview">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <span class="section-subtitle">WHO AM I</span>
+                    <h2 class="section-title">A Passionate Developer Who Loves Clean Code</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image fade-in-left">
+                        <div class="image-wrapper">
+                            <img src="images/For White mode.svg"
+                                alt="Shady Gaber - Frontend Developer working on modern web applications"
+                                class="profile-image" loading="lazy" width="400" height="400">
+                        </div>
+                    </div>
+                    <div class="about-content fade-in-right">
+                        <p class="about-text">
+                            With years of experience in frontend development, I specialize in creating
+                            <strong>responsive</strong>, <strong>accessible</strong>, and <strong>performant</strong>
+                            web applications using modern technologies.
+                        </p>
+                        <p class="about-text">
+                            My approach combines technical expertise with creative problem-solving to deliver
+                            exceptional user experiences that make a difference.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="10">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8">0</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-outline">Learn More About Me</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="12" y1="19" x2="12" y2="5"></line>
-            <polyline points="5 12 12 5 19 12"></polyline>
-        </svg>
-    </button>
+        <!-- Expertise Section -->
+        <section class="section expertise" id="expertise">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <span class="section-subtitle">WHAT I DO</span>
+                    <h2 class="section-title">My Expertise</h2>
+                </div>
+                <div class="expertise-grid">
+                    <div class="expertise-card fade-in-up">
+                        <div class="expertise-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="expertise-title">Frontend Development</h3>
+                        <p class="expertise-description">
+                            Building modern, responsive websites with HTML5, CSS3, JavaScript, and Bootstrap.
+                            Learning React.js to create dynamic web applications.
+                        </p>
+                    </div>
+                    <div class="expertise-card fade-in-up">
+                        <div class="expertise-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="expertise-title">UI/UX Design</h3>
+                        <p class="expertise-description">
+                            Creating intuitive user interfaces with focus on user experience,
+                            accessibility, and modern design principles.
+                        </p>
+                    </div>
+                    <div class="expertise-card fade-in-up">
+                        <div class="expertise-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <h3 class="expertise-title">Research & Problem Solving</h3>
+                        <p class="expertise-description">
+                            Strong research and analytical skills to find solutions and learn new technologies.
+                            AI prompting expertise for enhanced productivity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Structured Data (JSON-LD) for SEO -->
-    <script type="application/ld+json">
+        <!-- Projects Preview -->
+        <section class="section projects-preview" id="projectsPreview">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <span class="section-subtitle">MY WORK</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="training-card fade-in-up" data-category="training">
+                        <div class="training-image">
+                            <img src="images/projects/training/training-elzero-template.svg"
+                                alt="Elzero Template Training Project" class="training-img">
+                            <div class="training-badge">Training Project</div>
+                        </div>
+                        <div class="training-content">
+                            <div class="training-tags">
+                                <span class="tag training-tag">HTML</span>
+                                <span class="tag training-tag">CSS</span>
+                                <span class="tag training-tag">Animations</span>
+                            </div>
+                            <h3 class="training-title">Elzero Template</h3>
+                            <p class="training-description">
+                                A blog-style template with articles, gallery, and features sections.
+                                Learned about complex layouts, animations, and interactive elements.
+                            </p>
+                            <div class="training-links">
+                                <a href="https://shadymg.github.io/Template-three/" target="_blank"
+                                    class="training-link">View Project →</a>
+                                <a href="https://github.com/shadymg/Template-three" target="_blank"
+                                    class="training-link">GitHub →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="training-card fade-in-up" data-category="training">
+                        <div class="training-image">
+                            <img src="images/projects/training/training-dashboard.svg"
+                                alt="Dashboard Template Training Project" class="training-img">
+                            <div class="training-badge">Training Project</div>
+                        </div>
+                        <div class="training-content">
+                            <div class="training-tags">
+                                <span class="tag training-tag">HTML</span>
+                                <span class="tag training-tag">CSS</span>
+                                <span class="tag training-tag">JavaScript</span>
+                            </div>
+                            <h3 class="training-title">Dashboard Template</h3>
+                            <p class="training-description">
+                                A comprehensive admin dashboard with statistics, charts, and data tables.
+                                Practiced complex layouts, data visualization, and interactive components.
+                            </p>
+                            <div class="training-links">
+                                <a href="https://shadymg.github.io/template4/" target="_blank"
+                                    class="training-link">View
+                                    Project →</a>
+                                <a href="https://github.com/shadymg/template4" target="_blank"
+                                    class="training-link">GitHub
+                                    →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="training-card fade-in-up" data-category="training">
+                        <div class="training-image">
+                            <img src="images/projects/training/training-kasper.svg"
+                                alt="Kasper Template Training Project" class="training-img">
+                            <div class="training-badge">Training Project</div>
+                        </div>
+                        <div class="training-content">
+                            <div class="training-tags">
+                                <span class="tag training-tag">HTML</span>
+                                <span class="tag training-tag">CSS</span>
+                                <span class="tag training-tag">JavaScript</span>
+                            </div>
+                            <h3 class="training-title">Kasper Template</h3>
+                            <p class="training-description">
+                                A comprehensive portfolio template with services, portfolio gallery, and pricing
+                                sections.
+                                Practiced advanced CSS techniques and JavaScript interactions.
+                            </p>
+                            <div class="training-links">
+                                <a href="https://shadymg.github.io/kasper/" target="_blank" class="training-link">View
+                                    Project →</a>
+                                <a href="https://github.com/shadymg/kasper" target="_blank" class="training-link">GitHub
+                                    →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="section-footer">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <span class="section-subtitle">TESTIMONIALS</span>
+                    <h2 class="section-title">What Clients Say</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in-up">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "Exceptional work! The website exceeded our expectations. Professional,
+                                responsive, and delivered on time. Highly recommended!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JD</div>
+                            <div class="author-info">
+                                <h4 class="author-name">John Doe</h4>
+                                <p class="author-title">CEO at TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in-up">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "A talented developer who understands both design and functionality.
+                                Great communication and problem-solving skills."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Miller</h4>
+                                <p class="author-title">Product Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in-up">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "Impressed by the attention to detail and clean code. The project was
+                                well-structured and easy to maintain."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MB</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Brown</h4>
+                                <p class="author-title">Tech Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta" id="cta">
+            <div class="container">
+                <div class="cta-content fade-in-up">
+                    <h2 class="cta-title">Let's Work Together</h2>
+                    <p class="cta-description">
+                        Have a project in mind? Let's discuss how we can bring your ideas to life.
+                    </p>
+                    <a href="contact.html" class="btn btn-light">Start a Conversation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <span class="logo-text">Shady</span><span class="logo-dot">.</span><span
+                                class="logo-dev">dev</span>
+                        </a>
+                        <p class="footer-tagline">Frontend Developer crafting elegant and modern web experiences with
+                            clean
+                            code and creative solutions.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Connect</h4>
+                        <ul class="footer-list">
+                            <li><a href="https://github.com/shadygaber-dev" target="_blank" rel="noopener">GitHub</a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/shadygaber-dev/" target="_blank"
+                                    rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/shadygaber.dev/" target="_blank"
+                                    rel="noopener">Instagram</a></li>
+                            <li><a href="mailto:shadygaber.dev@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Shady.dev - All rights reserved</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/shadygaber-dev" target="_blank" rel="noopener"
+                            class="footer-social-link" aria-label="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shadygaber-dev/" target="_blank" rel="noopener"
+                            class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/shadygaber.dev/" target="_blank" rel="noopener"
+                            class="footer-social-link" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
+
+        <!-- Structured Data (JSON-LD) for SEO -->
+        <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -485,7 +672,8 @@
       "image": "https://shadygaber-dev.github.io/portfolio/images/social-preview.png",
       "sameAs": [
         "https://github.com/shadygaber-dev",
-        "https://www.linkedin.com/in/shadygaber-dev/"
+        "https://www.linkedin.com/in/shadygaber-dev/",
+        "https://www.instagram.com/shadygaber.dev/"
       ],
       "jobTitle": "Frontend Developer",
       "worksFor": {
@@ -497,9 +685,9 @@
     }
     </script>
 
-    <!-- JavaScript -->
-    <script type="module" src="js/main.js"></script>
-    
+        <!-- JavaScript -->
+        <script type="module" src="js/main.js"></script>
+
     </div> <!-- End of Main Content -->
 </body>
 
