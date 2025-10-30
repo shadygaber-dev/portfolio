@@ -415,7 +415,21 @@ body:has(.loading-splash:not(.hidden)) {
   align-items: center;
   gap: 1rem;
 }
-
+.nav-close {
+  z-index: 999;
+  position: relative;
+  margin-right: 10px;
+  display: none;
+}
+.nav-close > i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s;
+}
+.nav-close > i:hover {
+  transform: scale(1.2);
+}
 /* Theme Toggle */
 .theme-toggle {
   background: var(--bg-tertiary);
@@ -562,7 +576,7 @@ body:has(.loading-splash:not(.hidden)) {
   position: relative;
   margin: 3rem 0 0 0;
   padding: 1.5rem 0;
-  top: 180px;
+  top: 130px;
 }
 
 /* ============================================

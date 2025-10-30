@@ -11,6 +11,7 @@ import { AnimationManager } from './components/animations.js';
 import { ParticlesManager } from './components/particles.js';
 import { initLetterAnimation } from './components/letterAnimation.js';
 import { initScrollIndicator } from './components/scrollIndicator.js';
+import { CookieConsent } from './components/cookieConsent.js';
 
 // Initialize Application
 class App {
@@ -39,6 +40,9 @@ class App {
         
         // Initialize particles background for entire site
         this.particles = new ParticlesManager();
+
+        // Initialize cookie consent popup
+        this.cookieConsent = new CookieConsent();
 
         // Initialize letter animation for hero title
         initLetterAnimation();
