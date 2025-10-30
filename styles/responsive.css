@@ -292,7 +292,9 @@
   .page-title {
     font-size: 2rem;
   }
-
+  .hero-tech-loop {
+    top: 60px;
+  }
   .page-description {
     font-size: 1rem;
   }
