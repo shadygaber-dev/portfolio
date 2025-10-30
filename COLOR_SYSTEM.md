@@ -283,3 +283,4 @@ Potential additions (optional):
 
 The grayscale palette creates a timeless, sophisticated look that puts emphasis on your work and content, not distracting colors.
 
+

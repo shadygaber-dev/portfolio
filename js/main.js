@@ -10,7 +10,7 @@ import { NavigationManager } from './components/navigation.js';
 import { AnimationManager } from './components/animations.js';
 import { ParticlesManager } from './components/particles.js';
 import { initLetterAnimation } from './components/letterAnimation.js';
-import { initScrollIndicator } from './components/scrollIndicator.js';
+ 
 import { CookieConsent } from './components/cookieConsent.js';
 
 // Initialize Application
@@ -47,8 +47,7 @@ class App {
         // Initialize letter animation for hero title
         initLetterAnimation();
 
-        // Initialize scroll indicator
-        initScrollIndicator();
+        
 
         // Initialize counter animations on homepage
         if (document.querySelector('.stat-number')) {

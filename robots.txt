@@ -12,3 +12,4 @@ Disallow: /*.md
 # Sitemap location
 Sitemap: https://shadygaber-dev.github.io/portfolio/sitemap.xml
 
+

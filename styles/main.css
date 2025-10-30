@@ -576,7 +576,7 @@ body:has(.loading-splash:not(.hidden)) {
   position: relative;
   margin: 3rem 0 0 0;
   padding: 1.5rem 0;
-  top: 130px;
+  top: 80px;
 }
 
 /* ============================================
