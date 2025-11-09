@@ -10,7 +10,7 @@ class ContactManager {
     // EmailJS Configuration
     this.emailConfig = {
       serviceID: "service_lvxsfue",
-      templateID: "template_72grn2i", // Replace with your EmailJS Template ID
+      templateID: "template_eyca4ek", // Replace with your EmailJS Template ID
       publicKey: "VszWzsIXTU6ZOK5OV", // Replace with your EmailJS Public Key
     };
 
