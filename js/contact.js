@@ -10,8 +10,8 @@ class ContactManager {
     // EmailJS Configuration
     this.emailConfig = {
       serviceID: "service_lvxsfue",
-      templateID: "template_72grn2i", // Replace with your EmailJS Template ID
-      publicKey: "VszWzsIXTU6ZOK5OV", // Replace with your EmailJS Public Key
+      templateID: "template_72grn2i",
+      publicKey: "VszWzsIXTU6ZOK5OV",
     };
 
     this.init();
@@ -62,7 +62,7 @@ class ContactManager {
     submitButton.style.minHeight = originalHeight + "px";
     submitButton.style.height = originalHeight + "px";
     submitButton.style.width = originalWidth + "px";
-    submitButton.textContent = "Sending...";
+    submitButton.innerHTML = "Sending...";
 
     try {
       // Send email via EmailJS
@@ -116,7 +116,6 @@ class ContactManager {
         templateParams
       );
 
-      console.log("Email sent successfully:", response);
       return response;
     } catch (error) {
       console.error("EmailJS Error:", error);

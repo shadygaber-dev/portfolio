@@ -171,7 +171,6 @@ export class CookieConsent {
   enableAnalytics() {
     // Placeholder for future analytics integration
     // Example: Google Analytics, custom tracking, etc.
-    console.log('Analytics enabled');
   }
 
   /**
@@ -179,7 +178,6 @@ export class CookieConsent {
    */
   disableAnalytics() {
     // Placeholder for disabling analytics
-    console.log('Analytics disabled');
   }
 
   /**

@@ -56,7 +56,6 @@ export class ParticlesManager {
         
         if (typeof particlesJS !== 'undefined') {
             particlesJS('particles-js', config);
-            console.log('✨ Particles.js initialized successfully!');
         }
     }
 
