@@ -7,8 +7,12 @@ class ContactManager {
     this.form = document.getElementById("contactForm");
     this.formMessage = document.getElementById("formMessage");
 
-    // Web3Forms Configuration
-    this.web3formsEndpoint = "https://api.web3forms.com/submit";
+    // EmailJS Configuration
+    this.emailConfig = {
+      serviceID: "service_lvxsfue",
+      templateID: "template_eyca4ek", // Replace with your EmailJS Template ID
+      publicKey: "VszWzsIXTU6ZOK5OV", // Replace with your EmailJS Public Key
+    };
 
     this.init();
   }
@@ -48,7 +52,10 @@ class ContactManager {
     const originalText = submitButton.innerHTML;
     
     submitButton.disabled = true;
-    submitButton.innerHTML = '<span>Sending...</span>';
+    submitButton.style.minHeight = originalHeight + "px";
+    submitButton.style.height = originalHeight + "px";
+    submitButton.style.width = originalWidth + "px";
+    submitButton.textContent = "Sending...";
 
     try {
       // Send form via Web3Forms
@@ -90,23 +97,15 @@ class ContactManager {
     formData.append("message", data.message || "");
 
     try {
-      // Submit form to Web3Forms
-      const response = await fetch(this.web3formsEndpoint, {
-        method: "POST",
-        body: formData,
-      });
+      // Send email using EmailJS
+      const response = await emailjs.send(
+        this.emailConfig.serviceID,
+        this.emailConfig.templateID,
+        templateParams
+      );
 
-      const result = await response.json();
-
-      if (result.success) {
-        console.log("Form submitted successfully:", result);
-        return result;
-      } else {
-        // Get error message from response
-        const errorMessage = result.message || `HTTP error! status: ${response.status}`;
-        console.error("Web3Forms Error Response:", result);
-        throw new Error(errorMessage);
-      }
+      console.log("Email sent successfully:", response);
+      return response;
     } catch (error) {
       console.error("Web3Forms Error:", error);
       throw error;

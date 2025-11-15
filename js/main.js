@@ -53,8 +53,6 @@ class App {
         if (document.querySelector('.stat-number')) {
             this.initCounters();
         }
-
-        console.log('✨ Portfolio website initialized successfully!');
     }
 
     // Counter Animation for Stats

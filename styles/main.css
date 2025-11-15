@@ -654,17 +654,17 @@ body:has(.loading-splash:not(.hidden)) {
    ============================================ */
 
 .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all var(--transition-normal);
-    border: 2px solid transparent;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .btn-primary {
