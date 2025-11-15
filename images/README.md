@@ -1,70 +1,76 @@
-# Images Directory
+# Training Projects Images
 
-This directory contains all images used in the portfolio website.
+This directory contains images for training projects that were built during the learning phase.
 
-## Directory Structure
+## Project Images Needed
 
-```
-images/
-├── profile/          # Personal photos and profile images
-├── projects/         # Project screenshots and mockups
-├── backgrounds/      # Background images and patterns
-├── icons/           # Icons and small graphics
-└── README.md        # This file
-```
+### 1. Leon Template (training-leon-template.jpg)
+- **Description**: Creative agency template with modern design
+- **Technologies**: HTML, CSS, Responsive Design
+- **Live Demo**: [https://shadymg.github.io/Leon-Template-one/](https://shadymg.github.io/Leon-Template-one/)
+- **GitHub**: [https://github.com/shadymg/Leon-Template-one](https://github.com/shadymg/Leon-Template-one)
+- **Size**: 800x600px
+- **Content**: Hero section, services, portfolio, about, contact
+
+### 2. Kasper Template (training-kasper.jpg)
+- **Description**: Comprehensive portfolio template
+- **Technologies**: HTML, CSS, JavaScript
+- **Live Demo**: [https://shadymg.github.io/kasper/](https://shadymg.github.io/kasper/)
+- **GitHub**: [https://github.com/shadymg/kasper](https://github.com/shadymg/kasper)
+- **Size**: 800x600px
+- **Content**: Services, portfolio gallery, pricing, testimonials
+
+### 3. Elzero Template (training-elzero-template.jpg)
+- **Description**: Blog-style template with articles and gallery
+- **Technologies**: HTML, CSS, JavaScript
+- **Live Demo**: [https://shadymg.github.io/Template-three/](https://shadymg.github.io/Template-three/)
+- **GitHub**: [https://github.com/shadymg/Template-three](https://github.com/shadymg/Template-three)
+- **Size**: 800x600px
+- **Content**: Articles, gallery, features, testimonials
+
+### 4. Dashboard Template (training-dashboard.jpg)
+- **Description**: Admin dashboard with statistics and charts
+- **Technologies**: HTML, CSS, JavaScript
+- **Live Demo**: [https://shadymg.github.io/template4/](https://shadymg.github.io/template4/)
+- **GitHub**: [https://github.com/shadymg/template4](https://github.com/shadymg/template4)
+- **Size**: 800x600px
+- **Content**: Dashboard, statistics, charts, data tables
+
+### 5. Shady Portfolio (training-shady-portfolio.jpg)
+- **Description**: Personal portfolio website
+- **Technologies**: HTML, CSS, JavaScript
+- **Live Demo**: [https://shadymg.github.io/Shady-Portfolio/](https://shadymg.github.io/Shady-Portfolio/)
+- **GitHub**: [https://github.com/shadymg/Shady-Portfolio](https://github.com/shadymg/Shady-Portfolio)
+- **Size**: 800x600px
+- **Content**: About, projects, plans, skills
+
+### 6. Todo List App (training-todo-app.jpg)
+- **Description**: Functional todo list application
+- **Technologies**: HTML, CSS, JavaScript
+- **Live Demo**: [https://shadymg.github.io/ToDo_List/](https://shadymg.github.io/ToDo_List/)
+- **GitHub**: [https://github.com/shadymg/ToDo_List](https://github.com/shadymg/ToDo_List)
+- **Size**: 800x600px
+- **Content**: Add, edit, delete, mark complete tasks
 
 ## Image Guidelines
 
-### Profile Images
-- **File format**: JPG or PNG
-- **Recommended size**: 400x400px minimum
-- **Aspect ratio**: 1:1 (square)
-- **File naming**: `profile-main.jpg`, `profile-about.jpg`, etc.
+- **Format**: JPG or PNG
+- **Quality**: High resolution, clear screenshots
+- **Style**: Clean, modern, professional look
+- **Consistency**: Similar color scheme and layout style
+- **Mobile**: Show both desktop and mobile versions if possible
 
-### Project Images
-- **File format**: JPG or PNG
-- **Recommended size**: 800x600px minimum
-- **Aspect ratio**: 4:3 or 16:9
-- **File naming**: `project-[name]-[type].jpg` (e.g., `project-ecommerce-desktop.jpg`)
+## Usage
 
-### Background Images
-- **File format**: JPG or PNG
-- **Recommended size**: 1920x1080px minimum
-- **Aspect ratio**: 16:9
-- **File naming**: `bg-[description].jpg` (e.g., `bg-hero-pattern.jpg`)
+These images are used in the training projects section to showcase early learning projects and demonstrate the progression from basic HTML/CSS to more advanced JavaScript applications.
 
-### Icons
-- **File format**: SVG or PNG
-- **Recommended size**: 24x24px, 32x32px, 48x48px
-- **File naming**: `icon-[name].svg` (e.g., `icon-github.svg`)
+## Learning Journey
 
-## Usage in HTML
+These projects represent the learning journey from basic HTML/CSS templates to more complex applications:
 
-### Profile Image Example
-```html
-<img src="images/profile/profile-main.jpg" alt="Profile Photo" class="profile-image">
-```
-
-### Project Image Example
-```html
-<img src="images/projects/project-ecommerce-desktop.jpg" alt="E-Commerce Project" class="project-image">
-```
-
-### Background Image Example
-```html
-<div class="hero-section" style="background-image: url('images/backgrounds/bg-hero-pattern.jpg');">
-```
-
-## Optimization Tips
-
-1. **Compress images** before adding them to reduce file size
-2. **Use WebP format** for better compression (with JPG fallback)
-3. **Provide multiple sizes** for responsive design
-4. **Add alt text** for accessibility
-5. **Use lazy loading** for better performance
-
-## Recommended Tools
-
-- **Image compression**: TinyPNG, ImageOptim
-- **Image editing**: Photoshop, GIMP, Canva
-- **Format conversion**: Online converters or command line tools
+1. **Leon Template** - First template project, focused on layout and design
+2. **Kasper Template** - Advanced template with more complex features
+3. **Elzero Template** - Blog-style template with dynamic content
+4. **Dashboard Template** - Complex admin interface with data visualization
+5. **Shady Portfolio** - Personal portfolio showcasing skills
+6. **Todo List App** - Interactive application with JavaScript functionality
