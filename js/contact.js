@@ -7,23 +7,14 @@ class ContactManager {
     this.form = document.getElementById("contactForm");
     this.formMessage = document.getElementById("formMessage");
 
-    // EmailJS Configuration
-    this.emailConfig = {
-      serviceID: "service_lvxsfue",
-      templateID: "template_eyca4ek", // Replace with your EmailJS Template ID
-      publicKey: "VszWzsIXTU6ZOK5OV", // Replace with your EmailJS Public Key
-    };
+    // Web3Forms Configuration
+    this.web3formsEndpoint = "https://api.web3forms.com/submit";
 
     this.init();
   }
 
   init() {
     if (!this.form) return;
-
-    // Initialize EmailJS
-    if (typeof emailjs !== "undefined") {
-      emailjs.init(this.emailConfig.publicKey);
-    }
 
     this.form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -43,7 +34,7 @@ class ContactManager {
     const formData = new FormData(this.form);
     const data = Object.fromEntries(formData);
 
-    // Validate all fields
+    // Validate all fields` 
     if (!this.validateForm()) {
       this.showMessage(
         "Please fill in all required fields correctly.",
@@ -55,18 +46,13 @@ class ContactManager {
     // Show loading state
     const submitButton = this.form.querySelector('button[type="submit"]');
     const originalText = submitButton.innerHTML;
-    const originalHeight = submitButton.offsetHeight;
-    const originalWidth = submitButton.offsetWidth;
-
+    
     submitButton.disabled = true;
-    submitButton.style.minHeight = originalHeight + "px";
-    submitButton.style.height = originalHeight + "px";
-    submitButton.style.width = originalWidth + "px";
-    submitButton.textContent = "Sending...";
+    submitButton.innerHTML = '<span>Sending...</span>';
 
     try {
-      // Send email via EmailJS
-      await this.sendEmail(data);
+      // Send form via Web3Forms
+      await this.submitForm(data);
 
       // Success
       this.showMessage(
@@ -85,41 +71,44 @@ class ContactManager {
       // Reset button
       submitButton.disabled = false;
       submitButton.innerHTML = originalText;
-      submitButton.style.minHeight = "";
-      submitButton.style.height = "";
-      submitButton.style.width = "";
     }
   }
 
-  async sendEmail(data) {
-    // Check if EmailJS is loaded
-    if (typeof emailjs === "undefined") {
-      throw new Error("EmailJS is not loaded");
+  async submitForm(data) {
+    // Get access key from hidden input
+    const accessKeyInput = this.form.querySelector('input[name="access_key"]');
+    if (!accessKeyInput || !accessKeyInput.value) {
+      throw new Error("Web3Forms access key is missing");
     }
 
-    // Prepare template parameters
-    const templateParams = {
-      from_name: data.name,
-      from_email: data.email,
-      reply_to: data.email,
-      to_email: "shadygaber.dev@gmail.com",
-      subject: data.subject,
-      message: data.message,
-      to_name: "Shady",
-    };
+    // Prepare form data for Web3Forms (using only required and standard fields)
+    const formData = new FormData();
+    formData.append("access_key", accessKeyInput.value);
+    formData.append("name", data.name || "");
+    formData.append("email", data.email || "");
+    formData.append("subject", data.subject || "");
+    formData.append("message", data.message || "");
 
     try {
-      // Send email using EmailJS
-      const response = await emailjs.send(
-        this.emailConfig.serviceID,
-        this.emailConfig.templateID,
-        templateParams
-      );
+      // Submit form to Web3Forms
+      const response = await fetch(this.web3formsEndpoint, {
+        method: "POST",
+        body: formData,
+      });
 
-      console.log("Email sent successfully:", response);
-      return response;
+      const result = await response.json();
+
+      if (result.success) {
+        console.log("Form submitted successfully:", result);
+        return result;
+      } else {
+        // Get error message from response
+        const errorMessage = result.message || `HTTP error! status: ${response.status}`;
+        console.error("Web3Forms Error Response:", result);
+        throw new Error(errorMessage);
+      }
     } catch (error) {
-      console.error("EmailJS Error:", error);
+      console.error("Web3Forms Error:", error);
       throw error;
     }
   }

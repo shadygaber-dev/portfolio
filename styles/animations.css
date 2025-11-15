@@ -322,6 +322,49 @@
     height: 300px;
 }
 
+/* Ripple Effect Span */
+/* For dynamically created ripple spans (empty spans used for click effect) */
+.ripple-effect:empty {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    pointer-events: none;
+}
+
+/* Ripple animation for text spans inside buttons */
+.btn span.ripple-effect:not(:empty) {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: ripple-text-pulse 0.6s ease-out;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-text-pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* Parallax Effect */
 .parallax {
     transition: transform 0.1s ease-out;

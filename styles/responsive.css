@@ -134,7 +134,11 @@
 
   /* Page Hero */
   .page-hero {
-    padding: 120px 0 60px;
+    padding: 100px 0 50px;
+  }
+
+  .contact-section {
+    padding: 50px 0;
   }
 
   .page-title {
@@ -221,6 +225,10 @@
   }
 
   /* Contact */
+  .contact-section {
+    padding: 60px 0;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -355,6 +363,12 @@
   .form-textarea {
     padding: 0.75rem;
     font-size: 0.95rem;
+  }
+
+  .btn[type="submit"] {
+    min-height: 52px;
+    font-size: 0.95rem;
+    padding: 0.875rem 1.5rem;
   }
 
   /* Filter Buttons */

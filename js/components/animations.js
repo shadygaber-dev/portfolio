@@ -85,10 +85,15 @@ export class AnimationManager {
     }
 
     addHoverEffects() {
-        // Add ripple effect to buttons
+        // Add ripple effect to buttons (except submit buttons in forms)
         const buttons = document.querySelectorAll('.btn');
         
         buttons.forEach(button => {
+            // Skip submit buttons in forms
+            if (button.type === 'submit' && button.closest('form')) {
+                return;
+            }
+            
             button.addEventListener('click', function(e) {
                 const ripple = document.createElement('span');
                 const rect = this.getBoundingClientRect();
